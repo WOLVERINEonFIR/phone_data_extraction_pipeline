@@ -1,0 +1,7 @@
+# Exclude raw device data folders across all sources
+output/**/bronze/phones/
+output/**/bronze/tablets/
+output/**/bronze/watches/
+
+# Optional: If you also want to exclude the archived files folder
+archieved_phones/

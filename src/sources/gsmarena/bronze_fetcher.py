@@ -14,10 +14,33 @@ from bs4 import BeautifulSoup
 # CONFIGURATION
 # ============================================================
 
-INPUT_FILE = Path("output/phones_urls.json")
 
-BRONZE_DIR = Path("output/bronze/phones")
-FAILED_FILE = Path("output/bronze/phones_failed.json")
+
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+
+INPUT_FILE = (
+    PROJECT_ROOT
+    / "output"
+    / "gsmarena"
+    / "url_inventory"
+    / "phones.json"
+)
+
+BRONZE_DIR = (
+    PROJECT_ROOT
+    / "output"
+    / "gsmarena"
+    / "bronze"
+    / "phones"
+)
+
+FAILED_FILE = (
+    PROJECT_ROOT
+    / "output"
+    / "gsmarena"
+    / "bronze"
+    / "phones_failed.json"
+)
 
 # Permanent Bronze boundary agreed for GSMArena.
 BRONZE_SELECTOR = "div.main.main-review.right.l-box.col"
@@ -79,6 +102,98 @@ BLOCK_TEXT_MARKERS = [
     "captcha",
     "temporarily unavailable",
 ]
+
+
+
+
+# ============================================================
+# PHONE INVENTORY SCOPE VALIDATION
+# ============================================================
+
+ALLOWED_PHONE_BRANDS = {
+    "samsung",
+    "apple",
+    "vivo",
+    "oneplus",
+    "oppo",
+    "realme",
+    "xiaomi",
+    "infinix",
+    "motorola",
+    "nothing",
+    "google",
+    "lava",
+    "lenovo",
+}
+
+
+def is_allowed_phone_url(url):
+    """Return (allowed, reason) for one GSMArena phone URL."""
+
+    parsed = urlparse(url)
+    host = (parsed.hostname or "").lower()
+
+    if host not in {"gsmarena.com", "www.gsmarena.com"}:
+        return False, "Not a GSMArena URL"
+
+    slug = Path(parsed.path).name.lower()
+
+    if not slug.endswith(".php"):
+        return False, "Not a GSMArena product PHP URL"
+
+    # Reject known watch/product-category URL patterns.
+    watch_pattern = (
+        r"(?:^|_)(?:galaxy_)?watch\d*(?:_|-|\.|$)"
+        r"|(?:^|_)(?:gear|smartwatch|smartband)(?:_|-|\.|$)"
+    )
+
+    if re.search(watch_pattern, slug):
+        return False, "Watch or wearable URL"
+
+    # GSMArena model URL slugs begin with the brand name.
+    brand = next(
+        (
+            name
+            for name in sorted(
+                ALLOWED_PHONE_BRANDS,
+                key=len,
+                reverse=True,
+            )
+            if slug.startswith(name + "_")
+        ),
+        None,
+    )
+
+    if brand is None:
+        return False, "Brand is not in the approved phone scope"
+
+    return True, "OK"
+
+
+def validate_phone_inventory(urls):
+    """Fail closed if any inventory URL is outside phone scope."""
+
+    invalid = []
+
+    for url in urls:
+        allowed, reason = is_allowed_phone_url(url)
+
+        if not allowed:
+            invalid.append((url, reason))
+
+    if invalid:
+        print("\nERROR: Out-of-scope URLs in phones.json.")
+        print("No URLs will be fetched in this run.\n")
+
+        for url, reason in invalid:
+            print(f"  - {reason}: {url}")
+
+        raise SystemExit(
+            "\nCorrect phones.json or move the out-of-scope "
+            "URLs to the appropriate inventory, then rerun."
+        )
+
+    print("Phone inventory scope validation passed.")
 
 
 # ============================================================
@@ -580,6 +695,8 @@ def main():
     # --------------------------------------------------------
 
     urls = load_phone_urls()
+
+    validate_phone_inventory(urls)
 
     print(f"Phone URLs loaded : {len(urls)}")
     print(f"Bronze directory  : {BRONZE_DIR}")
