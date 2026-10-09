@@ -1,0 +1,1308 @@
+{
+  "source": "DeviceSpecifications",
+  "generated_at": "2026-10-09T10:42:07+00:00",
+  "release_years": [
+    2024,
+    2025,
+    2026
+  ],
+  "count": 144,
+  "devices": [
+    {
+      "brand": "Apple",
+      "name": "iPad Air 11 (2024)",
+      "url": "https://www.devicespecifications.com/en/model/54865fdf",
+      "model_id": "54865fdf",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Air 11 Wi-Fi (2024)",
+      "url": "https://www.devicespecifications.com/en/model/6e875fe0",
+      "model_id": "6e875fe0",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Air 13 (2024)",
+      "url": "https://www.devicespecifications.com/en/model/dab35fe1",
+      "model_id": "dab35fe1",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Air 13 Wi-Fi (2024)",
+      "url": "https://www.devicespecifications.com/en/model/49ab5fe2",
+      "model_id": "49ab5fe2",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad mini 5G (2024)",
+      "url": "https://www.devicespecifications.com/en/model/c5f861c0",
+      "model_id": "c5f861c0",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad mini Wi-Fi (2024)",
+      "url": "https://www.devicespecifications.com/en/model/267461c1",
+      "model_id": "267461c1",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 11 (2024) 10-core M4",
+      "url": "https://www.devicespecifications.com/en/model/12905fd8",
+      "model_id": "12905fd8",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 11 (2024) 9-core M4",
+      "url": "https://www.devicespecifications.com/en/model/e9435fd7",
+      "model_id": "e9435fd7",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 11 Wi-Fi (2024) 10-core M4",
+      "url": "https://www.devicespecifications.com/en/model/4fc55fda",
+      "model_id": "4fc55fda",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 11 Wi-Fi (2024) 9-core M4",
+      "url": "https://www.devicespecifications.com/en/model/f2b65fd9",
+      "model_id": "f2b65fd9",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 13 (2024) 10-core M4",
+      "url": "https://www.devicespecifications.com/en/model/63a15fdc",
+      "model_id": "63a15fdc",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 13 (2024) 9-core M4",
+      "url": "https://www.devicespecifications.com/en/model/7ade5fdb",
+      "model_id": "7ade5fdb",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 13 Wi-Fi (2024) 10-core M4",
+      "url": "https://www.devicespecifications.com/en/model/c9705fde",
+      "model_id": "c9705fde",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 13 Wi-Fi (2024) 9-core M4",
+      "url": "https://www.devicespecifications.com/en/model/f2eb5fdd",
+      "model_id": "f2eb5fdd",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad (2025)",
+      "url": "https://www.devicespecifications.com/en/model/5a8e62c5",
+      "model_id": "5a8e62c5",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad (2025) Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/94b362c6",
+      "model_id": "94b362c6",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Air 11 (2025)",
+      "url": "https://www.devicespecifications.com/en/model/0c7062c1",
+      "model_id": "0c7062c1",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Air 11 Wi-Fi (2025)",
+      "url": "https://www.devicespecifications.com/en/model/2b1262c2",
+      "model_id": "2b1262c2",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Air 13 (2025)",
+      "url": "https://www.devicespecifications.com/en/model/c5e362c3",
+      "model_id": "c5e362c3",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Air 13 Wi-Fi (2025)",
+      "url": "https://www.devicespecifications.com/en/model/9bf262c4",
+      "model_id": "9bf262c4",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 11 (2025) 10-core M5",
+      "url": "https://www.devicespecifications.com/en/model/79d6651d",
+      "model_id": "79d6651d",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 11 (2025) 9-core M5",
+      "url": "https://www.devicespecifications.com/en/model/1fb3651c",
+      "model_id": "1fb3651c",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 11 Wi-Fi (2025) 10-core M5",
+      "url": "https://www.devicespecifications.com/en/model/1967651f",
+      "model_id": "1967651f",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 11 Wi-Fi (2025) 9-core M5",
+      "url": "https://www.devicespecifications.com/en/model/9c2d651e",
+      "model_id": "9c2d651e",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 13 (2025) 10-core M5",
+      "url": "https://www.devicespecifications.com/en/model/7f216521",
+      "model_id": "7f216521",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 13 (2025) 9-core M5",
+      "url": "https://www.devicespecifications.com/en/model/92a16520",
+      "model_id": "92a16520",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 13 Wi-Fi (2025) 9-core M5",
+      "url": "https://www.devicespecifications.com/en/model/75856522",
+      "model_id": "75856522",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Pro 13 Wi-Fi(2025) 10-core M5",
+      "url": "https://www.devicespecifications.com/en/model/0c8e6523",
+      "model_id": "0c8e6523",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Air 11 (2026)",
+      "url": "https://www.devicespecifications.com/en/model/c1b1668c",
+      "model_id": "c1b1668c",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Air 11 Wi-Fi (2026)",
+      "url": "https://www.devicespecifications.com/en/model/f092668d",
+      "model_id": "f092668d",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Air 13 (2026)",
+      "url": "https://www.devicespecifications.com/en/model/bd9b668e",
+      "model_id": "bd9b668e",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad Air 13 Wi-Fi (2026)",
+      "url": "https://www.devicespecifications.com/en/model/6996668f",
+      "model_id": "6996668f",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/cefa26"
+    },
+    {
+      "brand": "Infinix",
+      "name": "Xpad",
+      "url": "https://www.devicespecifications.com/en/model/2a166176",
+      "model_id": "2a166176",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/0a9b116"
+    },
+    {
+      "brand": "Infinix",
+      "name": "Xpad 20",
+      "url": "https://www.devicespecifications.com/en/model/be3163a1",
+      "model_id": "be3163a1",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/0a9b116"
+    },
+    {
+      "brand": "Infinix",
+      "name": "Xpad 20 Pro",
+      "url": "https://www.devicespecifications.com/en/model/945c64d8",
+      "model_id": "945c64d8",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/0a9b116"
+    },
+    {
+      "brand": "Infinix",
+      "name": "Xpad Edge",
+      "url": "https://www.devicespecifications.com/en/model/931b65f6",
+      "model_id": "931b65f6",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/0a9b116"
+    },
+    {
+      "brand": "Infinix",
+      "name": "Xpad GT",
+      "url": "https://www.devicespecifications.com/en/model/6eb4637e",
+      "model_id": "6eb4637e",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/0a9b116"
+    },
+    {
+      "brand": "Infinix",
+      "name": "Xpad 30",
+      "url": "https://www.devicespecifications.com/en/model/0d47687f",
+      "model_id": "0d47687f",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/0a9b116"
+    },
+    {
+      "brand": "Infinix",
+      "name": "Xpad 30 Pro",
+      "url": "https://www.devicespecifications.com/en/model/732b67f3",
+      "model_id": "732b67f3",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/0a9b116"
+    },
+    {
+      "brand": "Infinix",
+      "name": "Xpad 30E",
+      "url": "https://www.devicespecifications.com/en/model/5c8a66a2",
+      "model_id": "5c8a66a2",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/0a9b116"
+    },
+    {
+      "brand": "Motorola",
+      "name": "Moto Pad 60 Neo",
+      "url": "https://www.devicespecifications.com/en/model/7f7964cb",
+      "model_id": "7f7964cb",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/7a815"
+    },
+    {
+      "brand": "Motorola",
+      "name": "Moto Pad 60 Pro",
+      "url": "https://www.devicespecifications.com/en/model/794d6308",
+      "model_id": "794d6308",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/7a815"
+    },
+    {
+      "brand": "Motorola",
+      "name": "Moto Pad (2026)",
+      "url": "https://www.devicespecifications.com/en/model/6da66709",
+      "model_id": "6da66709",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/7a815"
+    },
+    {
+      "brand": "Motorola",
+      "name": "Moto Pad 70 Groove",
+      "url": "https://www.devicespecifications.com/en/model/619867e2",
+      "model_id": "619867e2",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/7a815"
+    },
+    {
+      "brand": "Motorola",
+      "name": "Moto Pad 70 Pro",
+      "url": "https://www.devicespecifications.com/en/model/a8b367a9",
+      "model_id": "a8b367a9",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/7a815"
+    },
+    {
+      "brand": "OnePlus",
+      "name": "Pad 2 2024",
+      "url": "https://www.devicespecifications.com/en/model/1f3c60c2",
+      "model_id": "1f3c60c2",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/e7f78a"
+    },
+    {
+      "brand": "OnePlus",
+      "name": "Pad Pro",
+      "url": "https://www.devicespecifications.com/en/model/d61860b2",
+      "model_id": "d61860b2",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/e7f78a"
+    },
+    {
+      "brand": "OnePlus",
+      "name": "Pad 2 OPD2508",
+      "url": "https://www.devicespecifications.com/en/model/4ed8654f",
+      "model_id": "4ed8654f",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/e7f78a"
+    },
+    {
+      "brand": "OnePlus",
+      "name": "Pad 3",
+      "url": "https://www.devicespecifications.com/en/model/0cae63b7",
+      "model_id": "0cae63b7",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/e7f78a"
+    },
+    {
+      "brand": "OnePlus",
+      "name": "Pad Go 2 5G",
+      "url": "https://www.devicespecifications.com/en/model/4c2065cc",
+      "model_id": "4c2065cc",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/e7f78a"
+    },
+    {
+      "brand": "OnePlus",
+      "name": "Pad Go 2 Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/a71f65cb",
+      "model_id": "a71f65cb",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/e7f78a"
+    },
+    {
+      "brand": "OnePlus",
+      "name": "PAD Lite LTE",
+      "url": "https://www.devicespecifications.com/en/model/b456642e",
+      "model_id": "b456642e",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/e7f78a"
+    },
+    {
+      "brand": "OnePlus",
+      "name": "PAD Lite Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/9463642d",
+      "model_id": "9463642d",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/e7f78a"
+    },
+    {
+      "brand": "OnePlus",
+      "name": "Pad 3 Pro",
+      "url": "https://www.devicespecifications.com/en/model/37de6794",
+      "model_id": "37de6794",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/e7f78a"
+    },
+    {
+      "brand": "OnePlus",
+      "name": "Pad 4",
+      "url": "https://www.devicespecifications.com/en/model/b68f6735",
+      "model_id": "b68f6735",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/e7f78a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad 2024",
+      "url": "https://www.devicespecifications.com/en/model/49cd6261",
+      "model_id": "49cd6261",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad 3",
+      "url": "https://www.devicespecifications.com/en/model/6e0b6208",
+      "model_id": "6e0b6208",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad 3 Pro",
+      "url": "https://www.devicespecifications.com/en/model/f3fc61d8",
+      "model_id": "f3fc61d8",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad Neo LTE",
+      "url": "https://www.devicespecifications.com/en/model/d5df5ef3",
+      "model_id": "d5df5ef3",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad Neo Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/90cb5ef2",
+      "model_id": "90cb5ef2",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad 2 Pro",
+      "url": "https://www.devicespecifications.com/en/model/54cb6358",
+      "model_id": "54cb6358",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad 3 Matte Display Edition",
+      "url": "https://www.devicespecifications.com/en/model/bf166276",
+      "model_id": "bf166276",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad 4 Pro",
+      "url": "https://www.devicespecifications.com/en/model/f52e62fe",
+      "model_id": "f52e62fe",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad 5",
+      "url": "https://www.devicespecifications.com/en/model/7f66652e",
+      "model_id": "7f66652e",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad Air5 Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/a1fe661f",
+      "model_id": "a1fe661f",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad SE",
+      "url": "https://www.devicespecifications.com/en/model/00b66357",
+      "model_id": "00b66357",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad 5 5G Matte Display Edition",
+      "url": "https://www.devicespecifications.com/en/model/9011661d",
+      "model_id": "9011661d",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad 5 Pro",
+      "url": "https://www.devicespecifications.com/en/model/19766720",
+      "model_id": "19766720",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad 5 Wi-Fi Matte Display Edition",
+      "url": "https://www.devicespecifications.com/en/model/5d83661e",
+      "model_id": "5d83661e",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad 6",
+      "url": "https://www.devicespecifications.com/en/model/fef16772",
+      "model_id": "fef16772",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad Air5 5G",
+      "url": "https://www.devicespecifications.com/en/model/37846620",
+      "model_id": "37846620",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Oppo",
+      "name": "Pad Mini",
+      "url": "https://www.devicespecifications.com/en/model/a7506721",
+      "model_id": "a7506721",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/46076a"
+    },
+    {
+      "brand": "Poco",
+      "name": "Pad",
+      "url": "https://www.devicespecifications.com/en/model/62956008",
+      "model_id": "62956008",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/bd241cc"
+    },
+    {
+      "brand": "Poco",
+      "name": "PAD 5G",
+      "url": "https://www.devicespecifications.com/en/model/746f618a",
+      "model_id": "746f618a",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/bd241cc"
+    },
+    {
+      "brand": "Poco",
+      "name": "Pad M1",
+      "url": "https://www.devicespecifications.com/en/model/2f7665a7",
+      "model_id": "2f7665a7",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/bd241cc"
+    },
+    {
+      "brand": "Poco",
+      "name": "Pad X1",
+      "url": "https://www.devicespecifications.com/en/model/694165a8",
+      "model_id": "694165a8",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/bd241cc"
+    },
+    {
+      "brand": "Poco",
+      "name": "Pad C1",
+      "url": "https://www.devicespecifications.com/en/model/e744675c",
+      "model_id": "e744675c",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/bd241cc"
+    },
+    {
+      "brand": "Realme",
+      "name": "Pad 2 Lite",
+      "url": "https://www.devicespecifications.com/en/model/9b02610e",
+      "model_id": "9b02610e",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/83401ab"
+    },
+    {
+      "brand": "Realme",
+      "name": "Pad 3 5G",
+      "url": "https://www.devicespecifications.com/en/model/5b616626",
+      "model_id": "5b616626",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/83401ab"
+    },
+    {
+      "brand": "Realme",
+      "name": "Pad 3 Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/b6416627",
+      "model_id": "b6416627",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/83401ab"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab Active5",
+      "url": "https://www.devicespecifications.com/en/model/43725ef5",
+      "model_id": "43725ef5",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S10 Ultra 5G",
+      "url": "https://www.devicespecifications.com/en/model/1f25613c",
+      "model_id": "1f25613c",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S10 Ultra Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/577e613d",
+      "model_id": "577e613d",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S10+ 5G",
+      "url": "https://www.devicespecifications.com/en/model/89d0613e",
+      "model_id": "89d0613e",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S10+ Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/45ad613f",
+      "model_id": "45ad613f",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S6 Lite 2024 LTE",
+      "url": "https://www.devicespecifications.com/en/model/3f995f91",
+      "model_id": "3f995f91",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S6 Lite 2024 Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/d8525f92",
+      "model_id": "d8525f92",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab A11 LTE",
+      "url": "https://www.devicespecifications.com/en/model/8d506563",
+      "model_id": "8d506563",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab A11 Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/81f56564",
+      "model_id": "81f56564",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab A11+ LTE",
+      "url": "https://www.devicespecifications.com/en/model/bf59656a",
+      "model_id": "bf59656a",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab A11+ Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/f44d656b",
+      "model_id": "f44d656b",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab Active5 Pro",
+      "url": "https://www.devicespecifications.com/en/model/5a196310",
+      "model_id": "5a196310",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab Active5 Pro Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/e2ac6311",
+      "model_id": "e2ac6311",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S10 FE 5G",
+      "url": "https://www.devicespecifications.com/en/model/946662e9",
+      "model_id": "946662e9",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S10 FE Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/ee8362ea",
+      "model_id": "ee8362ea",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S10 FE+ 5G",
+      "url": "https://www.devicespecifications.com/en/model/a8a962eb",
+      "model_id": "a8a962eb",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S10 FE+ Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/aca262ec",
+      "model_id": "aca262ec",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S10 Lite 5G",
+      "url": "https://www.devicespecifications.com/en/model/78116466",
+      "model_id": "78116466",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S10 Lite Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/a8fd6467",
+      "model_id": "a8fd6467",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S11 5G",
+      "url": "https://www.devicespecifications.com/en/model/80ba64a0",
+      "model_id": "80ba64a0",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S11 Ultra 5G",
+      "url": "https://www.devicespecifications.com/en/model/24b764a2",
+      "model_id": "24b764a2",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S11 Ultra Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/540864a1",
+      "model_id": "540864a1",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S11 Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/d23d649f",
+      "model_id": "d23d649f",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S12 Ultra 5G",
+      "url": "https://www.devicespecifications.com/en/model/f9e06872",
+      "model_id": "f9e06872",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S12 Ultra Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/57e76873",
+      "model_id": "57e76873",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S12+ 5G",
+      "url": "https://www.devicespecifications.com/en/model/b2f86874",
+      "model_id": "b2f86874",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S12+ Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/dfe16875",
+      "model_id": "dfe16875",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/d1cd1"
+    },
+    {
+      "brand": "Vivo",
+      "name": "iQOO Pad Air",
+      "url": "https://www.devicespecifications.com/en/model/30325f4e",
+      "model_id": "30325f4e",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "iQOO Pad2",
+      "url": "https://www.devicespecifications.com/en/model/f2f56051",
+      "model_id": "f2f56051",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "iQOO Pad2 Pro",
+      "url": "https://www.devicespecifications.com/en/model/9bcc6050",
+      "model_id": "9bcc6050",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "Pad3",
+      "url": "https://www.devicespecifications.com/en/model/4dbc6078",
+      "model_id": "4dbc6078",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "Pad3 Pro",
+      "url": "https://www.devicespecifications.com/en/model/8a1a6079",
+      "model_id": "8a1a6079",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "Pad3 Pro",
+      "url": "https://www.devicespecifications.com/en/model/31865f82",
+      "model_id": "31865f82",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "iQOO Pad5",
+      "url": "https://www.devicespecifications.com/en/model/785063a6",
+      "model_id": "785063a6",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "iQOO Pad5 Pro",
+      "url": "https://www.devicespecifications.com/en/model/be2c63a5",
+      "model_id": "be2c63a5",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "iQOO Pad5e",
+      "url": "https://www.devicespecifications.com/en/model/27f16534",
+      "model_id": "27f16534",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "Pad SE",
+      "url": "https://www.devicespecifications.com/en/model/be826323",
+      "model_id": "be826323",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "Pad5",
+      "url": "https://www.devicespecifications.com/en/model/b4ba63a7",
+      "model_id": "b4ba63a7",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "Pad5 Pro",
+      "url": "https://www.devicespecifications.com/en/model/abf06322",
+      "model_id": "abf06322",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "Pad5e",
+      "url": "https://www.devicespecifications.com/en/model/cba2652f",
+      "model_id": "cba2652f",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "iQOO Pad Ultra",
+      "url": "https://www.devicespecifications.com/en/model/83b16876",
+      "model_id": "83b16876",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "iQOO Pad5c",
+      "url": "https://www.devicespecifications.com/en/model/a21067c9",
+      "model_id": "a21067c9",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "iQOO Pad6 Pro",
+      "url": "https://www.devicespecifications.com/en/model/aa3b675f",
+      "model_id": "aa3b675f",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Vivo",
+      "name": "Pad6 Pro",
+      "url": "https://www.devicespecifications.com/en/model/160766e3",
+      "model_id": "160766e3",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/b9e76e"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Pad 6S Pro 12.4",
+      "url": "https://www.devicespecifications.com/en/model/34005f37",
+      "model_id": "34005f37",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Pad 7",
+      "url": "https://www.devicespecifications.com/en/model/756361e0",
+      "model_id": "756361e0",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Pad 7 Pro",
+      "url": "https://www.devicespecifications.com/en/model/182061e1",
+      "model_id": "182061e1",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi Pad Pro",
+      "url": "https://www.devicespecifications.com/en/model/e1795fa8",
+      "model_id": "e1795fa8",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi Pad SE 8.7",
+      "url": "https://www.devicespecifications.com/en/model/88e2616e",
+      "model_id": "88e2616e",
+      "category": "tablet",
+      "release_year": 2024,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Pad 7 Ultra",
+      "url": "https://www.devicespecifications.com/en/model/eafd636f",
+      "model_id": "eafd636f",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Pad 7S Pro",
+      "url": "https://www.devicespecifications.com/en/model/67d3640a",
+      "model_id": "67d3640a",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Pad 8",
+      "url": "https://www.devicespecifications.com/en/model/ae326515",
+      "model_id": "ae326515",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Pad 8 Pro",
+      "url": "https://www.devicespecifications.com/en/model/3c5e6516",
+      "model_id": "3c5e6516",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Pad Mini",
+      "url": "https://www.devicespecifications.com/en/model/75db6510",
+      "model_id": "75db6510",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi K Pad",
+      "url": "https://www.devicespecifications.com/en/model/19b0640b",
+      "model_id": "19b0640b",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi Pad 2 4G",
+      "url": "https://www.devicespecifications.com/en/model/e2f164ce",
+      "model_id": "e2f164ce",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi Pad 2 Pro",
+      "url": "https://www.devicespecifications.com/en/model/ac5d650f",
+      "model_id": "ac5d650f",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi Pad 2 Wi-Fi",
+      "url": "https://www.devicespecifications.com/en/model/09ec63cc",
+      "model_id": "09ec63cc",
+      "category": "tablet",
+      "release_year": 2025,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Pad 9",
+      "url": "https://www.devicespecifications.com/en/model/d3936844",
+      "model_id": "d3936844",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Pad 9 Pro",
+      "url": "https://www.devicespecifications.com/en/model/6b296843",
+      "model_id": "6b296843",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Pad 9 Pro Max",
+      "url": "https://www.devicespecifications.com/en/model/509f683c",
+      "model_id": "509f683c",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi K Pad 2",
+      "url": "https://www.devicespecifications.com/en/model/204a6725",
+      "model_id": "204a6725",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi Pad 2 9.7",
+      "url": "https://www.devicespecifications.com/en/model/72036738",
+      "model_id": "72036738",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    },
+    {
+      "brand": "Xiaomi",
+      "name": "Redmi Pad 2 SE",
+      "url": "https://www.devicespecifications.com/en/model/08046724",
+      "model_id": "08046724",
+      "category": "tablet",
+      "release_year": 2026,
+      "source_page": "https://www.devicespecifications.com/en/brand/1e7667"
+    }
+  ]
+}

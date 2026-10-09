@@ -10,11 +10,15 @@ import json
 # CONFIGURATION
 # =====================================================
 
+
 BASE_URL = "https://www.gsmarena.com/"
 
-OUTPUT_PHONES = "output/phones_urls.json"
-OUTPUT_TABLETS = "output/tablets_urls.json"
-OUTPUT_WATCHES = "output/watches_urls.json"
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+OUTPUT_DIR = PROJECT_ROOT / "output" / "gsmarena" / "url_inventory"
+
+OUTPUT_PHONES = OUTPUT_DIR / "phones.json"
+OUTPUT_TABLETS = OUTPUT_DIR / "tablets.json"
+OUTPUT_WATCHES = OUTPUT_DIR / "watches.json"
 
 # These are intentionally FIRST-PAGE URLs only.
 # We do not follow pagination because the existing inventory
