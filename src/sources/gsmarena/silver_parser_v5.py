@@ -1101,6 +1101,118 @@ def _parse_colors(text: str | None) -> list[str]:
     # Slash and comma-separated colors are common; retain raw separately.
     return _split_list(text)
 
+def _parse_storage_standard(text: str | None) -> dict[str, Any] | None:
+    """Normalize a storage-interface/version claim while retaining its source text."""
+    if not text:
+        return None
+
+    match = re.search(
+        r"\b(UFS|eMMC|NVMe)\s*([0-9]+(?:\.(?:[0-9]+|x))?)?",
+        text,
+        re.I,
+    )
+
+    if not match:
+        return None
+
+    technology = match.group(1)
+
+    if technology.lower() == "ufs":
+        technology = "UFS"
+    elif technology.lower() == "emmc":
+        technology = "eMMC"
+    else:
+        technology = "NVMe"
+
+    return {
+        "technology": technology,
+        "version": match.group(2),
+        "raw": text,
+    }
+
+def _parse_storage_standards(text: str | None) -> list[dict[str, Any]]:
+    """Parse one or more storage standards, including variant-specific claims."""
+    if not text:
+        return []
+
+    results = []
+
+    claims = [part.strip() for part in re.split(r"\s*\|\s*", text) if part.strip()]
+
+    for claim in claims:
+        match = re.match(
+            r"^\s*(?:Dual\s+)?(UFS|eMMC|NVMe|uMCP)\s*"
+            r"([0-9]+(?:\.(?:[0-9]+|X))?)?",
+            claim,
+            re.I,
+        )
+
+        if not match:
+            continue
+
+        technology = match.group(1)
+        technology_key = technology.lower()
+
+        if technology_key == "ufs":
+            technology = "UFS"
+        elif technology_key == "emmc":
+            technology = "eMMC"
+        elif technology_key == "umcp":
+            technology = "uMCP"
+        else:
+            technology = "NVMe"
+
+        version = match.group(2)
+
+        annotation_match = re.search(
+            r"-\s*(.+)$|\(([^()]*)\)\s*$",
+            claim,
+        )
+        annotation = (
+            next((value for value in annotation_match.groups() if value), "")
+            if annotation_match
+            else ""
+        )
+
+        applies_to = []
+
+        pairs = re.findall(r"\b(\d+)\s*/\s*(\d+)\b", annotation)
+
+        if pairs:
+            for storage_gb, ram_gb in pairs:
+                applies_to.append({
+                    "storage_gb": int(storage_gb),
+                    "ram_gb": int(ram_gb),
+                })
+        else:
+            capacities = re.findall(r"\b(\d+)\s*GB\b", annotation, re.I)
+
+            for storage_gb in capacities:
+                applies_to.append({
+                    "storage_gb": int(storage_gb),
+                    "ram_gb": None,
+                })
+
+        results.append({
+            "technology": technology,
+            "version": version,
+            "applies_to": applies_to,
+            "raw": claim,
+        })
+        print(results)
+    return results
+
+def _parse_software_features(text: str | None) -> list[str]:
+    if not text:
+        return []
+
+    features = []
+
+    if re.search(r"\bSamsung\s+DeX\b", text, re.I):
+        features.append("Samsung DeX")
+
+    return features
+
 
 def _parse_usb(raw: str | None) -> dict[str, Any]:
     if not raw:
@@ -1151,6 +1263,36 @@ def _parse_usb(raw: str | None) -> dict[str, Any]:
             if x
         ],
     }
+
+def _parse_uwb(text: str | None) -> dict[str, Any]:
+    if not text:
+        return {"supported": None, "raw": None}
+
+    match = re.search(
+        r"Ultra\s+Wideband(?:\s*\(\s*UWB\s*\))?|\bUWB\b",
+        text,
+        re.I,
+    )
+
+    return {
+        "supported": True if match else None,
+        "raw": match.group(0) if match else None,
+    }
+
+def _parse_display_features(text: str | None) -> list[str]:
+    if not text:
+        return []
+
+    known_features = [
+        ("Anti-reflective coating", r"anti[- ]reflective coating"),
+        ("Flex Titanium technology", r"flex titanium technology"),
+    ]
+
+    return [
+        name
+        for name, pattern in known_features
+        if re.search(pattern, text, re.I)
+    ]
 
 def _parse_sim_configurations(text: str | None) -> list[dict[str, Any]]:
     if not text:
@@ -2006,6 +2148,8 @@ def _parse_legacy_document(html: str, source: dict[str, Any] | None = None) -> d
 
             "major_android_updates_years": _parse_major_updates(_spec(soup, "os")),
 
+            "features": _parse_software_features(_spec(soup, "featuresother")),
+
         },
 
         "memory": {
@@ -2013,6 +2157,8 @@ def _parse_legacy_document(html: str, source: dict[str, Any] | None = None) -> d
             "internal_raw": memory_text,
 
             "storage_type": _spec(soup, "memoryother"),
+
+            "storage_standard": _parse_storage_standard(_spec(soup, "memoryother")),
 
             "card_slot": _spec(soup, "memoryslot"),
 
@@ -2051,6 +2197,8 @@ def _parse_legacy_document(html: str, source: dict[str, Any] | None = None) -> d
                 False if bands["technology"] else None
 
             ),
+
+            "uwb": _parse_uwb(_spec(soup, "featuresother")),
 
             "usb": _spec(soup, "usb"),
 
@@ -2664,34 +2812,32 @@ def parse_many(paths: Iterable[str | Path]) -> list[dict[str, Any]]:
 
 if __name__ == "__main__":
 
-  import argparse
+    import argparse
 
-  project_root = Path.cwd()
+    project_root = Path.cwd()
 
-  default_input = project_root / "output" / "gsmarena" / "bronze" / "phones" 
+    default_input = project_root / "output" / "gsmarena" / "bronze" / "phones" / "test2"
 
-  default_output = project_root / "output" / "gsmarena" / "silver" / "phones.json"
+    default_output = project_root / "output" / "gsmarena" / "silver" / "phones.json"
 
-  parser = argparse.ArgumentParser(description="Parse GSMArena Bronze captures into one Silver phones.json")
+    parser = argparse.ArgumentParser(description="Parse GSMArena Bronze captures into one Silver phones.json")
 
-  parser.add_argument("files", nargs="*", help="Optional input JSON files; defaults to all JSON files in the Bronze directory")
+    parser.add_argument("files", nargs="*", help="Optional input JSON files; defaults to all JSON files in the Bronze directory")
 
-  parser.add_argument("--output", type=Path, default=default_output, help="Output path for the combined phones.json array")
+    parser.add_argument("--output", type=Path, default=default_output, help="Output path for the combined phones.json array")
 
-  args = parser.parse_args()
+    args = parser.parse_args()
 
-  input_files = [Path(f) for f in args.files] if args.files else sorted(default_input.glob("*.json"))
+    input_files = [Path(f) for f in args.files] if args.files else sorted(default_input.glob("*.json"))
 
-  if not input_files:
+    if not input_files:
 
-      parser.error(f"No JSON files found in {default_input}")
+        parser.error(f"No JSON files found in {default_input}")
 
-  results = parse_many(input_files)
+    results = parse_many(input_files)
 
-  args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.parent.mkdir(parents=True, exist_ok=True)
 
-  args.output.write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    args.output.write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-  print(f"Parsed {len(results)} phone record(s).")
-
-  print(f"Output written to: {args.output}")
+    print(f"Parsed {len(results)} phone record(s).")
