@@ -1370,20 +1370,31 @@ def _parse_charging_protocols(text: str | None) -> dict[str, list[str]]:
         ("SuperCharge", r"\bSuperCharge\b"),
     ]
 
-    wireless_patterns = [
-        ("Qi", r"\bQi\b"),
-        ("Qi2", r"\bQi2\b"),
-        ("MagSafe", r"\bMagSafe\b"),
-        ("AirFuel", r"\bAirFuel\b"),
-    ]
+    wireless_standards = []
+
+    wireless_matches = re.finditer(
+        r"\bQi2(?:\.\d+)?\b|\bQi\b|\bMagSafe\b|\bAirFuel\b",
+        text,
+        re.I,
+    )
+
+    for match in wireless_matches:
+        value = match.group(0)
+
+        if value.lower().startswith("qi2"):
+            standard = "Qi2" + value[3:]
+        elif value.lower() == "qi":
+            standard = "Qi"
+        elif value.lower() == "magsafe":
+            standard = "MagSafe"
+        else:
+            standard = "AirFuel"
+
+        if standard not in wireless_standards:
+            wireless_standards.append(standard)
 
     wired_protocols = [
         name for name, pattern in wired_patterns
-        if re.search(pattern, text, re.I)
-    ]
-
-    wireless_standards = [
-        name for name, pattern in wireless_patterns
         if re.search(pattern, text, re.I)
     ]
 
@@ -1804,6 +1815,8 @@ def _parse_legacy_document(html: str, source: dict[str, Any] | None = None) -> d
 
         "wireless_watt": None,
 
+        "wireless_supported": None,
+
         "reverse_wired_supported": None,
 
         "reverse_wired_watt": None,
@@ -1863,6 +1876,13 @@ def _parse_legacy_document(html: str, source: dict[str, Any] | None = None) -> d
 
         if re.search(r"\breverse[- ]wireless\b", charging_detail, re.I):
             charging["reverse_wireless_supported"] = True
+
+        if re.search(
+            r"\bwireless\b",
+            re.sub(r"\breverse[- ]wireless\b", "", charging_detail, flags=re.I),
+            re.I,
+        ):
+            charging["wireless_supported"] = True
 
         wireless_values = [
 
@@ -2531,6 +2551,17 @@ def _parse_cover_display(legacy: dict[str, Any],is_foldable: bool,main_display: 
     ppi = _number_from_text(cover_text, r"(?<!\d)(\d+)\s*ppi\b")
     refresh = _number_from_text(cover_text, r"(?<!\d)(\d{2,3})\s*Hz\b")
     peak = _number_from_text(cover_text, r"(\d[\d,]*)\s*nits\s*\(peak\)")
+
+    hbm = _number_from_text(
+        cover_text,
+        r"(\d[\d,]*)\s*nits\s*\(HBM\)",
+    )
+
+    typical = _number_from_text(
+        cover_text,
+        r"(\d[\d,]*)\s*nits\s*\(typ\)",
+    )
+
     if size is None and resolution["width_px"] is None and not marked:
         return None
 
@@ -2542,7 +2573,9 @@ def _parse_cover_display(legacy: dict[str, Any],is_foldable: bool,main_display: 
         if size_match:
             technology = technology[:size_match.start()].strip(" ,;:")
     protection_match = re.search(
-        r"Corning Gorilla Glass[^,;]*|Gorilla Glass[^,;]*",
+        r"(?:Corning\s+)?Gorilla Glass[^,;]*"
+        r"|Ceramic Shield(?:\s+\d+)?"
+        r"|Dragontrail Glass[^,;]*",
         cover_text,
         re.I,
     )
@@ -2575,8 +2608,8 @@ def _parse_cover_display(legacy: dict[str, Any],is_foldable: bool,main_display: 
         "refresh_rate_hz": refresh,
         "pwm_dimming_hz": _number_from_text(technology,r"(?<!\d)(\d+)\s*Hz\s*PWM\b"),
         "peak_brightness_nits": peak,
-        "hbm_brightness_nits": None,
-        "typical_brightness_nits": None,
+        "hbm_brightness_nits": hbm,
+        "typical_brightness_nits": typical,
         "measured_brightness_nits": None,
         "hdr_formats": _parse_hdr_formats(technology),
         "protection": protection_text,
@@ -2839,14 +2872,16 @@ def _map_to_unified(legacy: dict[str, Any], source: dict[str, Any] | None = None
                 "energy_wh": battery.get("energy_wh"),
                 "type": battery.get("type_raw"),
                 "wired_charging": {"max_power_w": charging.get("wired_watt"),"protocols": _parse_charging_protocols(charging.get("raw"))["wired_protocols"],},
-                "wireless_charging": {"supported": True if charging.get("wireless_watt") is not None else None,
-                                    "max_power_w": charging.get("wireless_watt")},
+                "wireless_charging": {
+                    "supported": charging.get("wireless_supported"),
+                    "max_power_w": charging.get("wireless_watt"),
+                    "standards": charging_protocols["wireless_standards"],
+                },
                 "reverse_charging": {
                     "wired_supported": charging.get("reverse_wired_supported"),
                     "wired_watt": charging.get("reverse_wired_watt"),
                     "wireless_supported": charging.get("reverse_wireless_supported"),
                     "wireless_watt": charging.get("reverse_wireless_watt"),
-                    "standards": charging_protocols["wireless_standards"],
                 },
                 "bypass_charging": charging.get("bypass_charging"),
                 "active_use_score_minutes": battery.get("active_use_score_minutes"),
@@ -2892,7 +2927,12 @@ def _map_to_unified(legacy: dict[str, Any], source: dict[str, Any] | None = None
                 "operating_system": software.get("os"),
                 "user_interface": _parse_user_interfaces(software.get("os")),
                 "launch_os_version": software.get("os"),
-                "update_policy": {"os_updates_years": software.get("major_android_updates_years"), "security_updates_years": None, "source_url": source_meta.get("url")},
+                "update_policy": {
+                    "major_os_updates": software.get("major_android_updates_years"),
+                    "os_updates_years": None,
+                    "security_updates_years": None,
+                    "source_url": source_meta.get("url")
+                },
                 "features": software.get("features") or [],
             },
             "audio": legacy.get("audio") or {},
@@ -2954,11 +2994,494 @@ def _map_to_unified(legacy: dict[str, Any], source: dict[str, Any] | None = None
         }
 
 
+def _validate_parse_quality(record: dict[str, Any]) -> dict[str, Any]:
+    """Validate a unified phone record and return its parse-quality assessment."""
+
+    issues = []
+    unresolved_fields = []
+
+    identity = record.get("identity") or {}
+    performance = record.get("performance") or {}
+    chipset = performance.get("chipset") or {}
+    battery = record.get("battery") or {}
+
+    provenance = record.get("provenance") or {}
+    raw_specifications = provenance.get("raw_specifications") or {}
+    raw_battery = raw_specifications.get("Battery") or {}
+
+    raw_charging = (
+        raw_battery.get("Charging")
+        if isinstance(raw_battery, dict)
+        else None
+    )
+
+    raw_charging_text = str(raw_charging or "").strip()
+    has_charging_section = bool(raw_charging_text)
+
+    raw_platform = raw_specifications.get("Platform") or {}
+
+    source_has_cpu = (
+        isinstance(raw_platform, dict)
+        and bool(raw_platform.get("CPU"))
+    )
+
+    source_has_gpu = (
+        isinstance(raw_platform, dict)
+        and bool(raw_platform.get("GPU"))
+    )
+
+    raw_selfie_camera = raw_specifications.get("Selfie camera") or {}
+
+    front_camera_source_detail = None
+
+    if isinstance(raw_selfie_camera, dict):
+        for key in ("Single", "Dual", "Triple", "Quad"):
+            if raw_selfie_camera.get(key):
+                front_camera_source_detail = raw_selfie_camera[key]
+                break
+
+    source_has_front_lens_details = bool(
+        front_camera_source_detail
+        and str(front_camera_source_detail).strip().lower()
+        not in {"yes", "no", "unspecified"}
+    )
+
+    source_lists_wired_watt = False
+
+    for clause in raw_charging_text.split("|"):
+        wired_part = re.sub(
+            r"\b(?:reverse[- ]wired|reverse[- ]wireless|wireless)\b[^,;|]*",
+            "",
+            clause,
+            flags=re.I,
+        )
+
+        if (
+            re.search(r"\bwired\b", wired_part, re.I)
+            and re.search(r"(?<![\d.])\d+(?:\.\d+)?\s*W\b", wired_part, re.I)
+        ):
+            source_lists_wired_watt = True
+            break
+
+    critical_fields = {
+        "identity.brand": identity.get("brand"),
+        "identity.model_name": identity.get("model_name"),
+        "performance.chipset.variants": chipset.get("variants"),
+        "battery.capacity_mah": battery.get("capacity_mah"),
+    }
+
+    displays = record.get("displays") or []
+
+    main_display = next(
+        (display for display in displays if display.get("role") == "main"),
+        None,
+    )
+
+    critical_fields["displays[role=main].size_inches"] = (
+        main_display.get("size_inches") if main_display else None
+    )
+    critical_fields["displays[role=main].resolution"] = (
+        main_display.get("resolution") if main_display else None
+    )
+
+    # Critical-priority fields
+    for field, value in critical_fields.items():
+        if value is None or value == [] or value == "":
+            issues.append({
+                "code": "critical_field_missing",
+                "field": field,
+                "priority": "critical",
+                "classification": "human_review",
+                "message": f"Critical field is missing: {field}",
+                "source_evidence": None,
+            })
+            unresolved_fields.append(field)
+
+    connectivity = record.get("connectivity") or {}
+    software = record.get("software") or {}
+    camera_modules = (record.get("cameras") or {}).get("modules") or []
+
+    variants = record.get("variants") or []
+    cpu_variants = (performance.get("cpu") or {}).get("variants") or []
+    gpu_variants = (performance.get("gpu") or {}).get("variants") or []
+
+    rear_camera = next(
+        (m for m in camera_modules if m.get("position") == "rear"),
+        None,
+    )
+    front_camera = next(
+        (m for m in camera_modules if m.get("position") == "front"),
+        None,
+    )
+
+    network_technology = connectivity.get("network_technology")
+    supports_5g = bool(
+        network_technology
+        and "5G" in network_technology.upper()
+    )
+
+    raw_battery_type = (
+        raw_battery.get("Type")
+        if isinstance(raw_battery, dict)
+        else None
+    )
+
+    source_lists_energy_wh = bool(
+        re.search(
+            r"\d+(?:\.\d+)?\s*Wh\b",
+            str(raw_battery_type or ""),
+            re.I,
+        )
+    )
+
+    source_lists_wireless_watt = False
+
+    for clause in raw_charging_text.split("|"):
+        ordinary_clause = re.sub(
+            r"\breverse[- ]wireless\b[^,;|]*",
+            "",
+            clause,
+            flags=re.I,
+        )
+
+        if (
+            re.search(r"\bwireless\b", ordinary_clause, re.I)
+            and re.search(
+                r"(?<![\d.])\d+(?:\.\d+)?\s*W\b",
+                ordinary_clause,
+                re.I,
+            )
+        ):
+            source_lists_wireless_watt = True
+            break
+
+    raw_5g = connectivity.get("5g_raw") or ""
+
+    has_explicit_5g_bands = bool(
+        re.match(
+            r"^\s*\d{1,3}(?:\s*,\s*\d{1,3})+",
+            raw_5g,
+        )
+    )
+
+    main_display_type = (
+        main_display.get("technology") or ""
+        if main_display else ""
+    )
+
+    source_lists_refresh_rate = bool(
+        re.search(
+            r"(?<!\w)\d+(?:\s*-\s*\d+)?\s*Hz(?!\s*PWM)",
+            main_display_type,
+            re.I,
+        )
+    )
+
+    # High-priority fields
+    high_fields = {
+        "variants[].ram_gb": any(
+            v.get("ram_gb") is not None for v in variants
+        ),
+        "variants[].storage_gb": any(
+            v.get("storage_gb") is not None for v in variants
+        ),
+        "performance.cpu.variants": (
+            any(
+                bool(v.get("description") or v.get("model"))
+                for v in cpu_variants
+            )
+            if source_has_cpu
+            else True
+        ),
+        "performance.gpu.variants": (
+            any(
+                bool(v.get("model"))
+                for v in gpu_variants
+            )
+            if source_has_gpu
+            else True
+        ),
+        "displays[role=main].refresh_rate_hz": (
+            main_display.get("refresh_rate_hz") is not None
+            if source_lists_refresh_rate
+            else True
+        ),
+        "battery.wired_charging.max_power_w": (
+            (battery.get("wired_charging") or {}).get("max_power_w")
+            is not None
+            if source_lists_wired_watt
+            else True
+        ),
+        "cameras.modules[rear].lenses": bool(
+            rear_camera and rear_camera.get("lenses")
+        ),
+        "cameras.modules[front].lenses": (
+            bool(front_camera and front_camera.get("lenses"))
+            if source_has_front_lens_details
+            else True
+        ),
+        "connectivity.network_technology": bool(network_technology),
+        "connectivity.5g_bands": (
+            bool(connectivity.get("5g_bands"))
+            if supports_5g and has_explicit_5g_bands
+            else True
+        ),
+        "software.operating_system": bool(
+            software.get("operating_system")
+        ),
+    }
+
+    for field, has_value in high_fields.items():
+        if not has_value:
+            issues.append({
+                "code": "high_field_missing",
+                "field": field,
+                "priority": "high",
+                "classification": "warning",
+                "message": f"High-priority field is missing: {field}",
+                "source_evidence": None,
+            })
+
+    # Record when the source confirms a front camera but does not specify lens details.
+    if (
+        front_camera
+        and raw_selfie_camera
+        and not source_has_front_lens_details
+    ):
+        issues.append({
+            "code": "source_field_not_provided",
+            "field": "cameras.modules[front].lenses",
+            "priority": "medium",
+            "classification": "info",
+            "message": (
+                "Source confirms a front camera but does not specify "
+                "its lens details."
+            ),
+            "source_evidence": raw_selfie_camera,
+        })
+
+    # Record when 5G is supported but numeric bands are not provided.
+    if supports_5g and not has_explicit_5g_bands:
+        issues.append({
+            "code": "source_field_not_provided",
+            "field": "connectivity.5g_bands",
+            "priority": "medium",
+            "classification": "info",
+            "message": (
+                "Source indicates 5G support but does not specify numeric bands."
+            ),
+            "source_evidence": raw_5g or None,
+        })
+
+    # Record important fields that the source does not provide.
+    if (
+        main_display is not None
+        and not source_lists_refresh_rate
+        and main_display.get("refresh_rate_hz") is None
+    ):
+        issues.append({
+            "code": "source_field_not_provided",
+            "field": "displays[role=main].refresh_rate_hz",
+            "priority": "medium",
+            "classification": "info",
+            "message": (
+                "Source does not specify the main display refresh rate."
+            ),
+            "source_evidence": main_display_type or None,
+        })
+
+    # Record when wired charging wattage is not specified by the source.
+    if not source_lists_wired_watt:
+        if has_charging_section:
+            issues.append({
+                "code": "source_field_not_provided",
+                "field": "battery.wired_charging.max_power_w",
+                "priority": "medium",
+                "classification": "info",
+                "message": (
+                    "Source provides charging details but does not specify "
+                    "maximum wired charging power."
+                ),
+                "source_evidence": raw_charging_text,
+            })
+        else:
+            issues.append({
+                "code": "source_section_not_available",
+                "field": "battery.wired_charging.max_power_w",
+                "priority": "medium",
+                "classification": "info",
+                "message": (
+                    "Source does not provide a Battery Charging specification."
+                ),
+                "source_evidence": None,
+            })
+
+    # Medium-priority fields
+    wifi = connectivity.get("wifi") or {}
+    bluetooth = connectivity.get("bluetooth") or {}
+    nfc = connectivity.get("nfc") or {}
+    physical = record.get("physical") or {}
+    dimensions = physical.get("dimensions_mm") or {}
+    memory = record.get("memory") or {}
+
+    medium_fields = {
+            "battery.energy_wh": (
+        battery.get("energy_wh") is not None
+        if source_lists_energy_wh
+        else True
+    ),
+        "battery.wireless_charging.max_power_w": (
+            (battery.get("wireless_charging") or {}).get("max_power_w")
+            is not None
+            if source_lists_wireless_watt
+            else True
+        ),
+        "connectivity.wifi.generation": bool(wifi.get("generation")),
+        "connectivity.bluetooth.version": bool(bluetooth.get("version")),
+        "connectivity.nfc.supported": nfc.get("supported") is not None,
+        "physical.dimensions_mm": any(
+            dimensions.get(key)
+            for key in ("standard", "unfolded", "folded")
+        ),
+        "physical.weight_g": physical.get("weight_g") is not None,
+        "memory.storage_standard": bool(memory.get("storage_standard")),
+        "software.user_interface": bool(software.get("user_interface")),
+    }
+
+    # Validate every display independently.
+    # Source evidence is checked against that display's own raw_other text.
+    for display in displays:
+        role = (
+            display.get("role")
+            or display.get("display_id")
+            or "unknown"
+        )
+        prefix = f"displays[role={role}]"
+
+        raw_text = str(display.get("raw_other") or "")
+
+        hbm_match = re.search(
+            r"(\d[\d,]*)\s*nits\s*\(HBM\)",
+            raw_text,
+            re.I,
+        )
+
+        protection_match = re.search(
+            r"(?:Corning\s+)?Gorilla Glass[^,;]*"
+            r"|Ceramic Shield[^,;]*"
+            r"|Dragontrail Glass[^,;]*",
+            raw_text,
+            re.I,
+        )
+
+        display_fields = {
+            "ppi": (
+                display.get("ppi") is not None,
+                None,
+            ),
+            "protection": (
+                bool(display.get("protection")),
+                protection_match.group(0).strip()
+                if protection_match else None,
+            ),
+            "peak_brightness_nits": (
+                display.get("peak_brightness_nits") is not None,
+                None,
+            ),
+            "hbm_brightness_nits": (
+                display.get("hbm_brightness_nits") is not None,
+                hbm_match.group(0) if hbm_match else None,
+            ),
+        }
+
+        for field, (has_value, evidence) in display_fields.items():
+            if not has_value:
+                classification = "error" if evidence else "info"
+
+                issues.append({
+                    "code": "medium_field_missing",
+                    "field": f"{prefix}.{field}",
+                    "priority": "medium",
+                    "classification": classification,
+                    "message": (
+                        f"Medium-priority field is missing: "
+                        f"{prefix}.{field}"
+                    ),
+                    "source_evidence": evidence,
+                })
+
+    for field, has_value in medium_fields.items():
+        if not has_value:
+            issues.append({
+                "code": "medium_field_missing",
+                "field": field,
+                "priority": "medium",
+                "classification": "info",
+                "message": f"Medium-priority field is missing: {field}",
+                "source_evidence": None,
+            })
+
+    # Record when the source does not specify wireless watts.
+    if not has_charging_section:
+        issues.append({
+            "code": "source_section_not_available",
+            "field": "battery.wireless_charging.max_power_w",
+            "priority": "medium",
+            "classification": "info",
+            "message": (
+                "Source does not provide a Battery Charging section."
+            ),
+            "source_evidence": None,
+        })
+
+    elif not source_lists_wireless_watt:
+        issues.append({
+            "code": "source_field_not_provided",
+            "field": "battery.wireless_charging.max_power_w",
+            "priority": "medium",
+            "classification": "info",
+            "message": (
+                "Source does not specify maximum wireless charging power."
+            ),
+            "source_evidence": raw_charging_text,
+        })
+    
+    # Record when the source does not specify battery energy.
+    if not source_lists_energy_wh:
+        issues.append({
+            "code": "source_field_not_provided",
+            "field": "battery.energy_wh",
+            "priority": "medium",
+            "classification": "info",
+            "message": (
+                "Source does not specify battery energy in Wh."
+            ),
+            "source_evidence": raw_battery_type or None,
+        })
+
+    return {
+        "status": (
+            "needs_review"
+            if any(
+                issue["classification"] in {"error", "human_review"}
+                for issue in issues
+            )
+            else "parsed"
+        ),
+        "warnings": issues,
+        "unresolved_fields": unresolved_fields,
+        "validated_at": None,
+    }
+
+
+
 def parse_gsmarena_html(html: str, source: dict[str, Any] | None = None) -> dict[str, Any]:
     """Parse GSMArena HTML and return the unified Silver schema (v5.1)."""
     source = source or {}
     legacy = _parse_legacy_document(html, source)
-    return _map_to_unified(legacy, source)
+    record = _map_to_unified(legacy, source)
+    record["parse_quality"] = _validate_parse_quality(record)
+    return record
 
 def parse_saved_json(path: str | Path) -> dict[str, Any]:
 
@@ -2982,36 +3505,36 @@ def parse_many(paths: Iterable[str | Path]) -> list[dict[str, Any]]:
 
 if __name__ == "__main__":
 
-  import argparse
+    import argparse
 
-  project_root = Path.cwd()
+    project_root = Path.cwd()
 
-  default_input = project_root / "output" / "gsmarena" / "bronze" / "phones" / "test4"
+    default_input = project_root / "output" / "gsmarena" / "bronze" / "phones"  
 
-  default_output = project_root / "output" / "gsmarena" / "silver" / "phones.json"
+    default_output = project_root / "output" / "gsmarena" / "silver" / "phones.json"
 
-  parser = argparse.ArgumentParser(description="Parse GSMArena Bronze captures into one Silver phones.json")
+    parser = argparse.ArgumentParser(description="Parse GSMArena Bronze captures into one Silver phones.json")
 
-  parser.add_argument("files", nargs="*", help="Optional input JSON files; defaults to all JSON files in the Bronze directory")
+    parser.add_argument("files", nargs="*", help="Optional input JSON files; defaults to all JSON files in the Bronze directory")
 
-  parser.add_argument("--output", type=Path, default=default_output, help="Output path for the combined phones.json array")
+    parser.add_argument("--output", type=Path, default=default_output, help="Output path for the combined phones.json array")
 
-  args = parser.parse_args()
+    args = parser.parse_args()
 
-  input_files = [Path(f) for f in args.files] if args.files else sorted(default_input.glob("*.json"))
+    input_files = [Path(f) for f in args.files] if args.files else sorted(default_input.glob("*.json"))
 
-  if not input_files:
+    if not input_files:
 
-      parser.error(f"No JSON files found in {default_input}")
+        parser.error(f"No JSON files found in {default_input}")
 
-  results = parse_many(input_files)
+    results = parse_many(input_files)
 
-  args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.parent.mkdir(parents=True, exist_ok=True)
 
-  args.output.write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    args.output.write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-  print(f"Parsed {len(results)} phone record(s).")
+    print(f"Parsed {len(results)} phone record(s).")
 
-  print(f"Output written to: {args.output}")
+    print(f"Output written to: {args.output}")
 
-
+   

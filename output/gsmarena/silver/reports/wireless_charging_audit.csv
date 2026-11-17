@@ -1,0 +1,495 @@
+﻿brand,model,normalized_supported,normalized_max_power_w,normalized_standards,raw_charging,classification
+Google,Google Pixel,,,,"18W wired, PD",no_wireless_mention
+Google,Google Pixel 2,,,,"10.5W wired (capped), PD2.0",no_wireless_mention
+Google,Google Pixel 2 XL,,,,"10.5W wired (capped), PD2.0",no_wireless_mention
+Google,Google Pixel 3,True,,,"18W wired, PD2.0 | Wireless",wireless_mentioned_no_wattage
+Google,Google Pixel 3 XL,True,,,"18W wired, PD2.0 | Wireless",wireless_mentioned_no_wattage
+Google,Google Pixel 3a,,,,"18W wired, PD2.0",no_wireless_mention
+Google,Google Pixel 3a XL,,,,"18W wired, PD2.0",no_wireless_mention
+Google,Google Pixel 4,True,,,"18W wired, PD2.0 | Wireless",wireless_mentioned_no_wattage
+Google,Google Pixel 4 XL,True,,,"18W wired, PD2.0 | Wireless",wireless_mentioned_no_wattage
+Google,Google Pixel 4a,,,,"18W wired, PD2.0",no_wireless_mention
+Google,Google Pixel 4a 5G,,,,"18W wired, PD2.0",no_wireless_mention
+Google,Google Pixel 5a 5G,,,,"18W wired, PD2.0",no_wireless_mention
+Google,Google Pixel 6a,,,,"18W wired, PD3.0",no_wireless_mention
+Google,Google Pixel Fold,True,,,"Wired, PD3.0 | Wireless",wireless_mentioned_no_wattage
+Google,Google Pixel XL,,,,"18W wired, PD",no_wireless_mention
+Infinix,Infinix GT 20 Pro,,,,"45W wired, PD3",no_wireless_mention
+Infinix,Infinix GT 30,,,,45W wired | 10W reverse wired | Bypass Charging,no_wireless_mention
+Infinix,Infinix Hot 40,,,,"33W wired, 20-75% in 35 min | Reverse wired",no_wireless_mention
+Infinix,Infinix Hot 40 Pro,,,,"33W wired, 20-75% in 35 min | Reverse wired",no_wireless_mention
+Infinix,Infinix Hot 40i,,,,18W wired | Reverse wired,no_wireless_mention
+Infinix,Infinix Hot 50,,,,18W wired | Reverse wired,no_wireless_mention
+Infinix,Infinix Hot 50 4G,,,,18W wired | Reverse wired | Bypass charging,no_wireless_mention
+Infinix,Infinix Hot 50 Pro 4G,,,,"33W wired, 50% in 27 min | Reverse wired | Bypass charging",no_wireless_mention
+Infinix,Infinix Hot 50 Pro+ 4G,,,,"33W wired, 50% in 26 min | 10W reverse wired | Bypass charging",no_wireless_mention
+Infinix,Infinix Hot 50i,,,,18W wired | Reverse wired | Bypass charging,no_wireless_mention
+Infinix,Infinix Hot 60,,,,18W wired | 10W reverse wired | Bypass charging,no_wireless_mention
+Infinix,Infinix Hot 60 Pro,,,,"45W wired, 50% in 22 min | 10W reverse wired",no_wireless_mention
+Infinix,Infinix Hot 60 Pro+,,,,"45W wired, 50% in 22 min | 10W reverse wired | Bypass charging",no_wireless_mention
+Infinix,Infinix Hot 60i 4G,,,,"45W wired, 50% in 24 min | 10W reverse wired | Bypass charging",no_wireless_mention
+Infinix,Infinix Hot 60i,,,,18W wired | 10W reverse wired | Bypass charging,no_wireless_mention
+Infinix,Infinix Hot 70,,,,"45W wired, 50% in 25 min | 10W reverse wired | Bypass charging",no_wireless_mention
+Infinix,Infinix Hot 70 Pro,,,,"45W wired, 50% in 25 min, 100% in 53 min (for 5600 mAh) | 10W reverse wired | Bypass charging",no_wireless_mention
+Infinix,Infinix Note 40X 5G,,,,"18W wired, 50% in 31 min | Reverse wired |",no_wireless_mention
+Infinix,Infinix Note 50s,,,,"45W wired, 100% in 60 min | 10W reverse wired | Bypass Charging",no_wireless_mention
+Infinix,Infinix Note 50x,,,,45W wired | 10W reverse wired | Bypass Charging,no_wireless_mention
+Infinix,Infinix Note Edge,,,,"45W wired, 50% in 27 min | 10W reverse wired | Bypass charging",no_wireless_mention
+Infinix,Infinix Smart 10,,,,15W wired | Reverse wired,no_wireless_mention
+Infinix,Infinix Smart 10 HD,,,,10W wired | Reverse wired,no_wireless_mention
+Infinix,Infinix Smart 10 Plus,,,,18W wired | Reverse wired,no_wireless_mention
+Infinix,Infinix Smart 20,,,,15W wired | 5W reverse wired,no_wireless_mention
+Infinix,Infinix Smart 8 (India),,,,10W wired | Reverse wired,no_wireless_mention
+Infinix,Infinix Smart 8 HD,,,,10W wired | Reverse wired,no_wireless_mention
+Infinix,Infinix Smart 8 Plus,,,,18W wired | Reverse wired,no_wireless_mention
+Infinix,Infinix Smart 8 Pro,,,,10W wired | Reverse wired,no_wireless_mention
+Infinix,Infinix Smart 9,,,,10W wired | Reverse wired,no_wireless_mention
+Infinix,Infinix Smart 9 HD,,,,10W wired | Reverse wired,no_wireless_mention
+Infinix,Infinix Zero 30,,,,"68W wired, 80% in 30 min",no_wireless_mention
+Infinix,Infinix Zero 30 4G,,,,"45W wired, PD3.0, 75% in 30 min",no_wireless_mention
+Infinix,Infinix Zero 40 4G,,,,"45W wired, 50% in 25 min | 10W reverse wired | Bypass Charging 2.0",no_wireless_mention
+Infinix,Infinix Zero Flip,,,,70W wired | 10W reverse wired,no_wireless_mention
+Lava,Lava Agni 2,,,,"66W wired, 50% in 16 min",no_wireless_mention
+Lava,Lava Agni 3,,,,"66W wired, 50% in 19 min",no_wireless_mention
+Lava,Lava Agni 4,,,,"66W wired, 50% in 19 min, 100% in 51 min",no_wireless_mention
+Lava,Lava Blaze,,,,,charging_section_missing
+Lava,Lava Blaze 1X,,,,15W wired,no_wireless_mention
+Lava,Lava Blaze 2,,,,18W wired,no_wireless_mention
+Lava,Lava Blaze 2 5G,,,,18W wired,no_wireless_mention
+Lava,Lava Blaze 2 Pro,,,,18W wired,no_wireless_mention
+Lava,Lava Blaze 3 5G,,,,18W wired,no_wireless_mention
+Lava,Lava Blaze 5G,,,,10W wired,no_wireless_mention
+Lava,Lava Blaze Amoled 2,,,,33W wired,no_wireless_mention
+Lava,Lava Blaze Curve,,,,"33W wired, 50% in 30 min",no_wireless_mention
+Lava,Lava Blaze Dragon,,,,18W wired,no_wireless_mention
+Lava,Lava Blaze Duo,,,,33W wired,no_wireless_mention
+Lava,Lava Blaze Duo 3,,,,"33W wired, 50% in 35 min",no_wireless_mention
+Lava,Lava Blaze Nxt,,,,10W wired,no_wireless_mention
+Lava,Lava Blaze Pro,,,,10W wired,no_wireless_mention
+Lava,Lava Blaze Pro 5G,,,,"33W wired, 50% in 29 min",no_wireless_mention
+Lava,Lava Blaze X,,,,33W wired,no_wireless_mention
+Lava,Lava Bold,,,,33W wired,no_wireless_mention
+Lava,Lava Bold N1 4G,,,,10W wired,no_wireless_mention
+Lava,Lava Bold N1,,,,10W wired,no_wireless_mention
+Lava,Lava Bold N1 Pro,,,,10W wired,no_wireless_mention
+Lava,Lava Bold N2 Lite,,,,10W wired,no_wireless_mention
+Lava,Lava Bold N2 Pro,,,,10W wired,no_wireless_mention
+Lava,Lava O1,,,,18W wired,no_wireless_mention
+Lava,Lava O2,,,,18W wired,no_wireless_mention
+Lava,Lava Play Max,,,,"33W wired, 100% in 83 min",no_wireless_mention
+Lava,Lava Play Ultra,,,,"33W wired, 100% in 83 min",no_wireless_mention
+Lava,Lava Shark 4G,,,,18W wired,no_wireless_mention
+Lava,Lava Shark 2,,,,18W wired,no_wireless_mention
+Lava,Lava Shark,,,,18W wired,no_wireless_mention
+Lava,Lava Smart 4,,,,10W wired,no_wireless_mention
+Lava,Lava Smart 4 Plus,,,,10W wired,no_wireless_mention
+Lava,Lava Storm,,,,33W wired,no_wireless_mention
+Lava,Lava Storm Lite,,,,15W wired,no_wireless_mention
+Lava,Lava Storm Play,,,,18W wired,no_wireless_mention
+Lava,Lava Virat Curve,,,,"45W wired, 50% in 19 min, 100% in 92 min",no_wireless_mention
+Lava,Lava Virat V1 4G,,,,10W wired,no_wireless_mention
+Lava,Lava Virat V1,,,,10W wired,no_wireless_mention
+Lava,Lava Virat V1 Pro,,,,18W wired,no_wireless_mention
+Lava,Lava X3,,,,10W wired,no_wireless_mention
+Lava,Lava Yuva,,,,10W wired,no_wireless_mention
+Lava,Lava Yuva 2,,,,10W wired,no_wireless_mention
+Lava,Lava Yuva 2 5G,,,,18W wired,no_wireless_mention
+Lava,Lava Yuva 2 Pro,,,,10W wired,no_wireless_mention
+Lava,Lava Yuva 3,,,,18W wired,no_wireless_mention
+Lava,Lava Yuva 3 Pro,,,,18W wired,no_wireless_mention
+Lava,Lava Yuva 4,,,,10W wired,no_wireless_mention
+Lava,Lava Yuva 5G,,,,18W wired,no_wireless_mention
+Lava,Lava Yuva Pro,,,,10W wired,no_wireless_mention
+Lava,Lava Yuva Star,,,,10W wired,no_wireless_mention
+Lava,Lava Yuva Star 2,,,,10W wired,no_wireless_mention
+Lava,Lava Yuva Star 3,,,,10W wired,no_wireless_mention
+Lava,Lava Z3,,,,,charging_section_missing
+Lava,Lava Z3 Pro,,,,,charging_section_missing
+Lenovo,Lenovo K13,,,,10W wired,no_wireless_mention
+Lenovo,Lenovo K13 Note,,,,10W wired,no_wireless_mention
+Lenovo,Lenovo K13 Pro,,,,15W wired,no_wireless_mention
+Lenovo,Lenovo K14 Plus,,,,10W wired,no_wireless_mention
+Lenovo,Lenovo Legion Y70,,,,"68W wired, 80% in 34 min",no_wireless_mention
+Lenovo,Lenovo Legion Y700,,,,"45W wired, 100% in 45 min",no_wireless_mention
+Lenovo,Lenovo Legion Y700 (2023),,,,45W wired,no_wireless_mention
+Lenovo,Lenovo Legion Y700 (2025),,,,68W wired | Bypass charging,no_wireless_mention
+Lenovo,Lenovo Legion Y700 (Gen 4),,,,68W wired | Bypass charging,no_wireless_mention
+Lenovo,Lenovo Legion Y700 (Gen 5),,,,68W wired | Bypass charging,no_wireless_mention
+Lenovo,Lenovo Legion Y700 AI,,,,"68W wired, 80% in 30 min, 100% in 51 min | Bypass charging",no_wireless_mention
+Lenovo,Lenovo Legion Y70 (2026),,,,90W wired | Bypass charging,no_wireless_mention
+Lenovo,Lenovo Legion Y90,,,,"68W wired, 100% in 35 min",no_wireless_mention
+Lenovo,Lenovo Legion Y900 11,,,,68W wired,no_wireless_mention
+Lenovo,Lenovo Legion Y900 13,,,,68W wired,no_wireless_mention
+Motorola,Motorola Edge 60,,,,68W wired,no_wireless_mention
+Motorola,Motorola Edge 60 Fusion,,,,68W wired,no_wireless_mention
+Motorola,Motorola Edge 60s,,,,68W wired,no_wireless_mention
+Motorola,Motorola Edge 70 Fusion,,,,68W wired,no_wireless_mention
+Motorola,Motorola Edge 70 Fusion+,,,,68W wired,no_wireless_mention
+Motorola,Motorola Edge 70 Plus,,,,45W wired | 7.5W reverse wired | Bypass charging,no_wireless_mention
+Motorola,Motorola G96,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto E15,,,,18W wired,no_wireless_mention
+Motorola,Motorola Moto G05,,,,18W wired,no_wireless_mention
+Motorola,Motorola Moto G06,,,,10W wired,no_wireless_mention
+Motorola,Motorola Moto G06 Power,,,,18W wired,no_wireless_mention
+Motorola,Motorola Moto G100,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G100S,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G15,,,,18W wired,no_wireless_mention
+Motorola,Motorola Moto G15 Power,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G17,,,,18W wired,no_wireless_mention
+Motorola,Motorola Moto G17 Power,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G37,,,,20W wired | 6W reverse wired,no_wireless_mention
+Motorola,Motorola Moto G37 Power,,,,30W wired | 6W reverse wired,no_wireless_mention
+Motorola,Motorola Moto G47,,,,20W wired | 6W reverse wired,no_wireless_mention
+Motorola,Motorola Moto G55,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G56,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G57,,,,,charging_section_missing
+Motorola,Motorola Moto G57 Power,,,,30W/33W wired,no_wireless_mention
+Motorola,Motorola Moto G67,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G67 Power,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G77,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G77 Power,,,,30W wired | 6W reverse wired,no_wireless_mention
+Motorola,Motorola Moto G86,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G86 Power,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G87,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G (2026),,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G (2025),,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G Max,,,,30W wired,no_wireless_mention
+Motorola,Motorola Moto G Play (2026),,,,18W wired,no_wireless_mention
+Motorola,Motorola Moto G Power (2026),,,,30W wired,no_wireless_mention
+Nothing,Nothing CMF Phone 1,,,,33W wired | 5W reverse wired,no_wireless_mention
+Nothing,Nothing CMF Phone 2 Pro,,,,33W wired | 5W reverse wired,no_wireless_mention
+Nothing,Nothing Phone (2a),,,,"45W wired, 50% in 23 min, 100% in 1 hour",no_wireless_mention
+Nothing,Nothing Phone (2a) Plus,,,,"50W wired, 50% in 21 min, 100% in 56 min",no_wireless_mention
+Nothing,Nothing Phone (3a),,,,"50W wired, 50% in 19 min, 100% in 56 min",no_wireless_mention
+Nothing,Nothing Phone (3a) Lite,,,,"33W wired, 50% in 20 min | 5W reverse wired",no_wireless_mention
+Nothing,Nothing Phone (3a) Pro,,,,"50W wired, 50% in 19 min, 100% in 56 min",no_wireless_mention
+Nothing,Nothing Phone (4a),,,,"50W wired, 50% in 22 min, 100% in 64 min | 7.5W reverse wired",no_wireless_mention
+Nothing,Nothing Phone (4a) Pro,,,,"50W wired, 50% in 22 min, 100% in 64 min | 7.5W reverse wired",no_wireless_mention
+Nothing,Nothing Phone (4b),,,,"33W wired, PPS, UFCS, PD | 7.5W reverse wired",no_wireless_mention
+OnePlus,OnePlus 11R,,,,100W wired,no_wireless_mention
+OnePlus,OnePlus 12R,,,,"100W wired, 100% in 26 min",no_wireless_mention
+OnePlus,OnePlus 13R,,,,"80W wired, 50% in 20 min, 100% in 52/54 min",no_wireless_mention
+OnePlus,OnePlus 13s,,,,"80W wired, 33W PPS, 18W PD, 18W QC | 5W reverse wired | Bypass charging",no_wireless_mention
+OnePlus,OnePlus 13T,,,,"80W wired, 33W PPS, 18W PD, 18W QC | 5W reverse wired",no_wireless_mention
+OnePlus,OnePlus 15R,,,,80W wired,no_wireless_mention
+OnePlus,OnePlus Ace 2,,,,"100W wired, 100% in 25 min",no_wireless_mention
+OnePlus,OnePlus Ace 2 Pro,,,,150W wired,no_wireless_mention
+OnePlus,OnePlus Ace 2V,,,,"80W wired, 100% in 32 min",no_wireless_mention
+OnePlus,OnePlus Ace 3,,,,"100W wired, 100% in 27 min",no_wireless_mention
+OnePlus,OnePlus Ace 3 Pro,,,,"100W wired, PD2.0, QC2, 52% in 15 min, 100% in 36 min",no_wireless_mention
+OnePlus,OnePlus Ace 3V,,,,"100W wired, 100% in 26 min",no_wireless_mention
+OnePlus,OnePlus Ace 5,,,,"80W wired, 18W PD, 55% in 15 min, 100% in 35 min",no_wireless_mention
+OnePlus,OnePlus Ace 5 Pro,,,,"100W wired, 33W PPS, 18W PD/QC, 55% in 15 min, 100% in 35 min",no_wireless_mention
+OnePlus,OnePlus Ace 5 Racing,,,,"80W wired, 33W PPS, 18W PD/QC | Bypass charging",no_wireless_mention
+OnePlus,OnePlus Ace 5 Ultra,,,,"100W wired, PD, 100% in 39 min | 7.5W reverse wired | Bypass charging",no_wireless_mention
+OnePlus,OnePlus Ace 6,,,,"120W wired, 120W UFCS, 55W PPS, 18W PD, 18W QC, 58% in 20 min, 100% in 43 min | Bypass charging",no_wireless_mention
+OnePlus,OnePlus Ace 6 Ultra,,,,"120W wired, 44W/120W UFCS, 55W PPS, 13.5W PD, 53% in 22 min",no_wireless_mention
+OnePlus,OnePlus Ace 6T,,,,"100W wired, 100W UFCS, 55W PPS, 18W PD, 18W QC, 50% in 23 min | Reverse wired | Bypass charging",no_wireless_mention
+OnePlus,OnePlus N6,,,,"45W wired, 50% in 47 min | 5W reverse wired | Bypass charging",no_wireless_mention
+OnePlus,OnePlus N6 Lite,,,,15W wired | 5W reverse wired,no_wireless_mention
+OnePlus,OnePlus N6x,,,,15W wired | 5W reverse wired | Bypass charging,no_wireless_mention
+OnePlus,OnePlus Nord 3,,,,"80W wired, 60% in 15 min, 100% in 32 min",no_wireless_mention
+OnePlus,OnePlus Nord 4,,,,"100W wired, PPS, 100% in 28 min",no_wireless_mention
+OnePlus,OnePlus Nord 5,,,,"80W wired, 33W PPS, 18W PD, 100% in just 54 min | 5W reverse wired | Bypass charging",no_wireless_mention
+OnePlus,OnePlus Nord 6,,,,"80W wired, UFCS, 55W PPS, 13.5W PD/QC | 6.5W reverse wired (27W for India model) | Bypass charging",no_wireless_mention
+OnePlus,OnePlus Nord CE3,,,,"80W wired, 61% in 15 min",no_wireless_mention
+OnePlus,OnePlus Nord CE4,,,,"100W wired, 100% in 29 min",no_wireless_mention
+OnePlus,OnePlus Nord CE4 Lite,,,,"80W wired, 100% in 50 min | 5W reverse wired",no_wireless_mention
+OnePlus,OnePlus Nord CE4 Lite (India),,,,"80W wired, 100% in 52 min | 5W reverse wired",no_wireless_mention
+OnePlus,OnePlus Nord CE5,,,,80W wired | Bypass charging,no_wireless_mention
+OnePlus,OnePlus Nord CE6,,,,"80W wired, 55W PPS, 13.5W PD | 27W reverse wired (India) | 6.5W reverse wired (Global) | Bypass charging",no_wireless_mention
+OnePlus,OnePlus Nord CE6 Lite,,,,"45W wired, 45W PPS | 10W reverse wired | Bypass charging",no_wireless_mention
+OnePlus,OnePlus Nord CE 3 Lite,,,,"67W wired, 80% in 30 min",no_wireless_mention
+OnePlus,OnePlus Nord N30,,,,50W wired,no_wireless_mention
+OnePlus,OnePlus Nord N30 SE,,,,"33W wired, 51% in 30 min",no_wireless_mention
+OnePlus,OnePlus Open,,,,"67W wired, PD, 100% in 42 min | Reverse wired",no_wireless_mention
+OnePlus,OnePlus Turbo 6,,,,"80W wired, UFCS, 55W PPS, 13.5W PD/QC | 27W reverse wired",no_wireless_mention
+OnePlus,OnePlus Turbo 6V,,,,"80W wired, UFCS, 55W PPS, 13.5W PD/QC | 27W reverse wired",no_wireless_mention
+OnePlus,OnePlus Turbo 6X,,,,"45W wired, 45W UFCS, 45W PPS, 13.5W PD | Reverse wired | Bypass charging",no_wireless_mention
+OnePlus,OnePlus Turbo 6X Pro,,,,"80W wired, 80W/44W UFCS, 55W PPS, 13.5W PD, 50% in 31 min | Bypass charging",no_wireless_mention
+Oppo,Oppo A5 4G,,,,"45W wired, 33W PPS, 13.5W PD, 50% in 36 min",no_wireless_mention
+Oppo,Oppo A5,,,,"45W wired, 33W PPS, 13.5W PD, 50% in 37 min",no_wireless_mention
+Oppo,Oppo A5x 4G,,,,"45W wired, 33W PPS, 13.5W PD, 50% in 36 min",no_wireless_mention
+Oppo,Oppo A5x,,,,"45W wired, 33W PPS, 13.5W PD, 50% in 37 min",no_wireless_mention
+Oppo,Oppo A6 4G,,,,"45W wired, 33W PPS, 13.5W PD, 36% in 30 min | 5W reverse wired",no_wireless_mention
+Oppo,Oppo A6,,,,"45W wired, 33W PPS, 13.5W PD, 37% in 30 min | 5W reverse wired",no_wireless_mention
+Oppo,Oppo A6 GT,,,,"80W wired, 33W PPS, 13.5W PD, 13.5W QC, 50% in 24 min | 10W reverse wired",no_wireless_mention
+Oppo,Oppo A6 Max,,,,"80W wired, 13.5W PD, 44W UFCS, 33W PPS, 50% in 24 min | Reverse wired",no_wireless_mention
+Oppo,Oppo A6 Pro 4G,,,,"80W wired, 33W PPS, 13.5W PD | 5W reverse wired",no_wireless_mention
+Oppo,Oppo A6 Pro (India),,,,"80W wired, 33W PPS, 13.5W PD, 54% in 30 min | 5W reverse wired",no_wireless_mention
+Oppo,Oppo A6c,,,,15W wired | 5W reverse wired,no_wireless_mention
+Oppo,Oppo A6c (China),,,,Wired | 5W reverse wired,no_wireless_mention
+Oppo,Oppo A6k,,,,"45 wired, 33W PPS, 13.5W PD |",no_wireless_mention
+Oppo,Oppo A6s 4G,,,,"80W wired, 33W PPS, 13.5W PD, 56% in 30 min | 5W reverse wired",no_wireless_mention
+Oppo,Oppo A6s,,,,"80W wired, 33W PPS, 13.5W PD, 54% in 30 min | 5W reverse wired",no_wireless_mention
+Oppo,Oppo A6s (India),,,,"45 wired, 33W PPS, 13.5W PD | 5W reverse wired",no_wireless_mention
+Oppo,Oppo A6s Pro,,,,"80W wired, 33W PPS, 13.5W PD | 5W reverse wired",no_wireless_mention
+Oppo,Oppo A6s Pro (China),,,,"80W wired, 55W PPS, 13.5W PD, 44W/80W UFCS | 5W reverse wired",no_wireless_mention
+Oppo,Oppo A6t 4G,,,,Wired | 5W reverse wired,no_wireless_mention
+Oppo,Oppo A6t,,,,45W wired | 5W reverse wired,no_wireless_mention
+Oppo,Oppo A6t Pro 4G,,,,"45W wired, 33W PPS, 13.5W PD, 36% in 30 min | 5W reverse wired",no_wireless_mention
+Oppo,Oppo A6x 4G,,,,Wired | 5W reverse wired,no_wireless_mention
+Oppo,Oppo A6x (India),,,,"45W wired, 33W PPS, 13.5W PD | 5W reverse wired",no_wireless_mention
+Oppo,Oppo A6x,,,,Wired | 5W reverse wired,no_wireless_mention
+Oppo,Oppo A7 Pro,,,,"45W wired, 45W UFCS, 45W PPS, 13.5W PD | Reverse wired",no_wireless_mention
+Oppo,Oppo A7 Pro Max,,,,"80W wired, 40W/80W UFCS, 55W PPS, 13.5W PD | 27W reverse wired",no_wireless_mention
+Oppo,Oppo F31,,,,"80W wired, 33W PPS, 13.5W PD | Reverse wired charging",no_wireless_mention
+Oppo,Oppo F31 Pro,,,,"80W wired, 33W PPS, 13.5W PD, 13.5W QC, UFCS, 37% in 20 min | 10W reverse wired",no_wireless_mention
+Oppo,Oppo F31 Pro+,,,,"80W wired, 13.5W PD, 44W UFCS, 33W PPS, 42% in 20 min | 10W reverse wired",no_wireless_mention
+Oppo,Oppo F33,,,,"80W wired, 33W PPS, 13.5W PD | 10W reverse wired",no_wireless_mention
+Oppo,Oppo F33 Pro,,,,"80W wired, 55W PPS, 13.5W PD | 5W reverse wired",no_wireless_mention
+Oppo,Oppo F35,,,,"80W wired, 44/80W UFCS, 55W PPS, 13.5W PD, 40% in 30 min | Reverse wired",no_wireless_mention
+Oppo,Oppo F35 Pro,,,,"80W wired, 44W UFCS, 55W PPS, 13.5W PD | Reverse wired",no_wireless_mention
+Oppo,Oppo Find X9s,,,,"80W wired, 55W PPS, 13.5W PD",no_wireless_mention
+Oppo,Oppo K13,,,,"80W wired, 33W PPS, PD, QC, 62% in 30 min, 100% in 56 min",no_wireless_mention
+Oppo,Oppo K13 Turbo,,,,"80W wired, 13.5W PD, 44W UFCS, 33W PPS | Reverse wired",no_wireless_mention
+Oppo,Oppo K13 Turbo Pro,,,,"80W wired, 13.5W PD, 44W UFCS, 33W PPS | Reverse wired",no_wireless_mention
+Oppo,Oppo K13x,,,,"45W wired, 33W PPS, 13.5W PD, 50% in 37 min",no_wireless_mention
+Oppo,Oppo K14,,,,"45W wired, 33W PPS, 13.5W PD, 37% in 30 min | 5W reverse wired",no_wireless_mention
+Oppo,Oppo K14 Lite,,,,"15W wired, 15W PD, 37% in 30 min | Reverse wired",no_wireless_mention
+Oppo,Oppo K14 Plus,,,,"45W wired, UFCS, 45W PPS, 13.5W PD | Reverse wired",no_wireless_mention
+Oppo,Oppo K14x,,,,"45 wired, 33W PPS, 13.5W PD | 5W reverse wired",no_wireless_mention
+Oppo,Oppo K15,,,,"80W wired, 44W/80W UFCS, 55W PPS, 13.5W PD | Reverse wired | Bypass charging",no_wireless_mention
+Oppo,Oppo K15 Pro,,,,"80W wired, 44W/80W UFCS, 55W PPS, 13.5W PD | Reverse wired | Bypass charging",no_wireless_mention
+Oppo,Oppo K15 Pro+,,,,"100W wired, 44W/100W UFCS, 55W PPS, 13.5W PD | Reverse wired | Bypass charging",no_wireless_mention
+Oppo,Oppo K15s,,,,"45W wired, 45W UFCS, 45W PPS, 13.5W PD | Reverse wired",no_wireless_mention
+Oppo,Oppo K15x,,,,45W wired | 5W reverse wired,no_wireless_mention
+Oppo,Oppo Reno14,,,,"80W wired, 13.5W PD, 33W PPS | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno14 F,,,,"45W wired, PD2, QC2.0, 44W PPS | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno15 (China),,,,"80W wired, 13.5W PD, 44W UFCS, 55W PPS | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno15 F,,,,"80W wired, 55W PPS, 13.5W PD/QC, 100% in 64 min | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno15 FS,,,,"80W wired, 55W PPS, 13.5W PD/QC | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno15 Pro Mini,,,,"80W wired, 13.5W PD, 55W PPS, 100% in 53 min | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno15c (India),,,,"80W wired, 55W PPS, 13.5W PD/QC, 100% in 64 min | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno16,,,,"80W wired, 55W PPS, 13.5W PD/QC, 100% in 59 min | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno16 (China),,,,"80W wired, 55W PPS, 44W/80W UFCS, 13.5W PD | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno16 F,,,,"80W wired, 55W PPS, 13.5W PD/QC, 100% in 62 min - International model | 45W wired, 45W PPS, 13.5W PD/QC, 100% in 84 min - Europe model | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno16 FS,,,,"45W wired, 45W PPS, 13.5W PD/QC, 100% in 84 min | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno16 Pro,,,,"80W wired, 44/80W UFCS, 55W PPS, 13.5W PD, 100% in 57 min | Reverse wired",no_wireless_mention
+Oppo,Oppo Reno16c,,,,"80W wired, 55W PPS, 13.5W PD/QC, 100% in 62 min | Reverse wired",no_wireless_mention
+Realme,Realme 14,,,,"45W wired, 50% in 30 min | Bypass charging",no_wireless_mention
+Realme,Realme 14 Pro Lite,,,,"45W wired, 50% in 27 min",no_wireless_mention
+Realme,Realme 14T,,,,"45W wired, 50% in 30 min",no_wireless_mention
+Realme,Realme 15 (India),,,,"80W wired, 50% in 25 min",no_wireless_mention
+Realme,Realme 15,,,,"80W wired, 50% in 25 min, 100% in 61 min",no_wireless_mention
+Realme,Realme 15 Lite,,,,80W wired,no_wireless_mention
+Realme,Realme 15 Pro,,,,"80W wired, 50% in 25 min",no_wireless_mention
+Realme,Realme 15T,,,,60W wired | 10W reverse wired | Bypass charging,no_wireless_mention
+Realme,Realme 15x (India),,,,60W wired | 6.5W reverse wired,no_wireless_mention
+Realme,Realme 16,,,,"60W wired, 45W PPS, 13.5W PD2.0 | Reverse wired |",no_wireless_mention
+Realme,Realme 16 Pro,,,,"80W wired, 55W PPS，13.5W PD2.0 - version 1 | 45W wired, 45W PPS，13.5W PD2.0 - version 2 | Reverse wired | Bypass Charging",no_wireless_mention
+Realme,Realme 16 Pro+,,,,"80W wired, 55W PPS, 13.5W PD/QC | Reverse wired | Bypass Charging",no_wireless_mention
+Realme,Realme 16T,,,,"45W wired, PPS, PD, QC | 15W reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme 16x,,,,"45W wired, 45W PPS, 13.5W PD/QC | 7W reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme C01,,,,"15W wired, 15W PD, QC | Reverse wired",no_wireless_mention
+Realme,Realme C100 4G,,,,15W wired | Reverse wired | Bypass charging,no_wireless_mention
+Realme,Realme C100,,,,"45 wired, PPS, 13.5W PD | 6.5W reverse wired",no_wireless_mention
+Realme,Realme C100i,,,,"15W wired, PD, QC | Reverse wired",no_wireless_mention
+Realme,Realme C100i (India),,,,"15W wired, 15W PD, QC | Reverse wired",no_wireless_mention
+Realme,Realme C100x,,,,"45W wired, 45W PPS, 13.5W PD | Reverse wired",no_wireless_mention
+Realme,Realme C71,,,,"45W wired, 50% in 36 min | 6W reverse wired",no_wireless_mention
+Realme,Realme C73,,,,15W wired | 5W reverse wired,no_wireless_mention
+Realme,Realme C75,,,,45W wired | 5W reverse wired,no_wireless_mention
+Realme,Realme C75x,,,,"45W wired, 100% in 90 min",no_wireless_mention
+Realme,Realme C83,,,,15W wired | Reverse wired | Bypass charging,no_wireless_mention
+Realme,Realme C85 4G,,,,45W wired | Reverse wired | Bypass charging,no_wireless_mention
+Realme,Realme C85,,,,45W wired | Reverse wired | Bypass charging,no_wireless_mention
+Realme,Realme C85 Pro,,,,45W wired | Reverse wired | Bypass charging,no_wireless_mention
+Realme,Realme GT7 (China),,,,100W wired | Bypass charging,no_wireless_mention
+Realme,Realme GT7 Pro Racing,,,,"120W wired, 13 min to 50%, 38 min to 100% | Bypass charging",no_wireless_mention
+Realme,Realme GT8 (China),,,,"100W wired, 14.4W PD, 45 min to 100%",no_wireless_mention
+Realme,Realme GT 7,,,,"120W wired, 14 min to 50%, 40 min to 100% | 7.5W reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme GT 7T,,,,"120W wired, 50% in 15 min, 100% in 42 min | Bypass charging",no_wireless_mention
+Realme,Realme Narzo 100 Lite,,,,"15W wired, PD | Reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme Narzo 100x,,,,"45W wired, 45W PPS, 13.5W PD/QC | Reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme Narzo 80 Lite,,,,15W wired | 6W reverse wired,no_wireless_mention
+Realme,Realme Narzo 80 Lite 5G,,,,15W wired | 5W reverse wired,no_wireless_mention
+Realme,Realme Narzo 80 Pro,,,,"80W wired, 50% in 21 min | Reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme Narzo 80x,,,,45W wired | 5W reverse wired,no_wireless_mention
+Realme,Realme Narzo 90,,,,"60W wired, 13.5W PD2.0 , 33W PPS, 10W BC1.2 | 10W reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme Narzo 90X,,,,"60W wired, 13.5W PD, 46W PPS | Reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme Narzo Power,,,,"80W wired, 55W PPS, 13.5W PD/QC, 50% in 36 min | 27W reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme Neo7 SE,,,,"80W wired, 23 min to 50%",no_wireless_mention
+Realme,Realme Neo7 Turbo,,,,"100W wired, PD, PPS, UFCS, 50% in 18 min, 100% in 47 min",no_wireless_mention
+Realme,Realme Neo7x,,,,"45W wired, 50% in 30 min",no_wireless_mention
+Realme,Realme Neo8,,,,"80W wired, 80W/44W UFCS, 55W PPS, 13.5W PD/QC",no_wireless_mention
+Realme,Realme Note 70,,,,15W wired | 6W reverse wired,no_wireless_mention
+Realme,Realme Note 70T,,,,15W wired | 6W reverse wired,no_wireless_mention
+Realme,Realme Note 80,,,,"15W wired, PD, QC | 6W reverse wired",no_wireless_mention
+Realme,Realme P3,,,,"45W wired, 50% in 30 min",no_wireless_mention
+Realme,Realme P3 Lite 4G,,,,15W wired | 6W reverse wired,no_wireless_mention
+Realme,Realme P3 Lite,,,,45W wired | 5W reverse wired,no_wireless_mention
+Realme,Realme P3 Pro,,,,"80W wired, 50% in 24 min | Bypass charging",no_wireless_mention
+Realme,Realme P3 Ultra,,,,"80W wired, PD, 100% in 47 min | 5W reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme P3x,,,,45W wired | 5W reverse wired,no_wireless_mention
+Realme,Realme P4,,,,80W wired | 10W reverse wired | Bypass charging,no_wireless_mention
+Realme,Realme P4 Lite 4G,,,,15W wired | 6W reverse wired,no_wireless_mention
+Realme,Realme P4 Lite,,,,"15W wired, PD | Reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme P4 Power,,,,"80W wired, 55W PPS, 13.5W PD/QC, 50% in 36 min | 27W reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme P4 Pro,,,,80W wired | 10W reverse wired | Bypass charging,no_wireless_mention
+Realme,Realme P4R,,,,"45W wired, 45W PPS, 13.5W PD/QC | Reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme P4s,,,,"80W wired, 55W PPS, 13.5W PD | 10W reverse wired | Bypass charging",no_wireless_mention
+Realme,Realme P4s Lite,,,,"15W wired, 15W PD | Reverse wired",no_wireless_mention
+Realme,Realme P4x 4G,,,,"45W wired, 45W PPS, 15W PD, 13W QC | 10W reverse wired",no_wireless_mention
+Realme,Realme P4x,,,,45W wired | Bypass charging,no_wireless_mention
+Samsung,Samsung Galaxy A06 5G,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy A07 4G,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy A07,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy A07s,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy A08 4G,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy A16,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy A16 5G,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy A17 4G,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy A17,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy A18 4G,,,,"25W wired, 50% in 30 min",no_wireless_mention
+Samsung,Samsung Galaxy A26,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy A27,,,,"25W wired, 45% in 30 min",no_wireless_mention
+Samsung,Samsung Galaxy A36,,,,"45W wired, 66% in 30 min, 100% in 68 min",no_wireless_mention
+Samsung,Samsung Galaxy A37,,,,45W wired,no_wireless_mention
+Samsung,Samsung Galaxy A56,,,,"45W wired, 65% in 30 min, 100% in 68 min",no_wireless_mention
+Samsung,Samsung Galaxy A57,,,,45W wired,no_wireless_mention
+Samsung,Samsung Galaxy F06 5G,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy F07,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy F08,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy F16,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy F17,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy F36,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy F56,,,,45W wired,no_wireless_mention
+Samsung,Samsung Galaxy F70,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy F70 Pro,,,,45W wired | Bypass charging,no_wireless_mention
+Samsung,Samsung Galaxy F70e,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy M06,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy M07,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy M08,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy M16,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy M17,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy M17e,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy M36,,,,25W wired,no_wireless_mention
+Samsung,Samsung Galaxy M47,,,,45W wired | Bypass charging,no_wireless_mention
+Samsung,Samsung Galaxy M56,,,,45W wired,no_wireless_mention
+Samsung,Samsung Galaxy XCover7 Pro,,,,15W wired,no_wireless_mention
+vivo,vivo iQOO 15R,,,,100W wired | Reverse wired | Bypass charging,no_wireless_mention
+vivo,vivo iQOO 15T,,,,"100W wired, PPS, PD | Reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo iQOO Neo11 Ultra,,,,100W wired | Reverse wired,no_wireless_mention
+vivo,vivo iQOO Neo 10,,,,"120W wired, 100W PD, 100W PPS, 50% in 15 min, 100% in 36 min | Reverse wired | Bypass Charging",no_wireless_mention
+vivo,vivo iQOO Z10 Lite,,,,15W wired,no_wireless_mention
+vivo,vivo iQOO Z10 Turbo+,,,,"90W wired, 55W PD/PPS | Reverse wired",no_wireless_mention
+vivo,vivo iQOO Z10R (India),,,,44W wired | Reverse wired,no_wireless_mention
+vivo,vivo iQOO Z11,,,,"90W wired, 50% in 37 min | 7.5W reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo iQOO Z11 (China),,,,"90W wired, 44W UFCS, 55W PD/PPS | Reverse wired",no_wireless_mention
+vivo,vivo iQOO Z11 (India),,,,"44W wired, PPS, 44% in 30 min | Reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo iQOO Z11 Lite 44W,,,,"44W wired, PPS, 50% in 38 min | Reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo iQOO Z11 Turbo,,,,100W wired | Reverse wired,no_wireless_mention
+vivo,vivo iQOO Z11i,,,,15W wired | Reverse wired,no_wireless_mention
+vivo,vivo iQOO Z11S,,,,44W wired | Reverse wired,no_wireless_mention
+vivo,vivo iQOO Z11x (China),,,,"44W wired, PPS, 50% in 43 min | Reverse wired",no_wireless_mention
+vivo,vivo S2,,,,44W wired | Reverse wired | Bypass charging,no_wireless_mention
+vivo,vivo S2 FE,,,,44W wired | Reverse wired,no_wireless_mention
+vivo,vivo S30,,,,"90W wired, PD | Reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo S30 Pro mini,,,,"90W wired, PD | Reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo S50,,,,"90W wired, PD | Reverse wired",no_wireless_mention
+vivo,vivo S60,,,,"90W wired, PD | Reverse wired",no_wireless_mention
+vivo,vivo S60e,,,,"90W wired, PD | Reverse wired",no_wireless_mention
+vivo,vivo T4 Lite,,,,15W wired,no_wireless_mention
+vivo,vivo T4 Pro,,,,"90W wired, PD | 7.5W reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo T4 Ultra,,,,"90W wired, PD, 100% in 48 min | Reverse wired",no_wireless_mention
+vivo,vivo T4R,,,,44W wired | Reverse wired | Bypass charging,no_wireless_mention
+vivo,vivo T5 4G,,,,"44W wired, 50% in 43 min | Reverse wired",no_wireless_mention
+vivo,vivo T5,,,,"44W wired, PPS, 44% in 30 min | Reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo T5 Lite,,,,"44W wired, 50% in 38 min | Reverse wired",no_wireless_mention
+vivo,vivo T5 Pro,,,,"90W wired, 50% in 37 min | Reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo T5e,,,,15W wired | Reverse wired,no_wireless_mention
+vivo,vivo T5x,,,,"44W wired, 50% in 43 min | Reverse wired | Bypass Charging",no_wireless_mention
+vivo,vivo V60,,,,"90W wired, PD | Reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo V60 Lite 4G,,,,"90W wired, 100% in 55 min | 6W reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo V60 Lite,,,,"90W wired, 100% in 52 min | 6W reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo V60e,,,,90W wired | Reverse wired | Bypass charging,no_wireless_mention
+vivo,vivo V70,,,,"90W wired, PD | Reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo V70 Elite,,,,"90W wired, PD | Reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo V70 Lite 4G,,,,44W wired | Reverse wired | Bypass charging,no_wireless_mention
+vivo,vivo V70 Lite,,,,"90W wired, 100% in 52 min | Bypass charging",no_wireless_mention
+vivo,vivo V80,,,,"90W wired, PD, 50% in 30 min | Reverse wired | Bypass charging",no_wireless_mention
+vivo,vivo V80 Lite,,,,44W wired | Reverse wired,no_wireless_mention
+vivo,vivo V80 Lite (IN/PK),,,,44W wired | Reverse wired | Bypass charging,no_wireless_mention
+vivo,vivo X200 FE,,,,"90W wired, 100% in 57 min | Reverse wired",no_wireless_mention
+vivo,vivo X300 E,,,,90W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y05,,,,15W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y05e,,,,15W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y11,,,,15W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y11d,,,,"44W wired, 50% in 40 min | Reverse wired",no_wireless_mention
+vivo,vivo Y19s,,,,15W wired,no_wireless_mention
+vivo,vivo Y19s GT,,,,15W wired,no_wireless_mention
+vivo,vivo Y19s Pro,,,,"44W wired, 40% in 30 min | Reverse wired",no_wireless_mention
+vivo,vivo Y21,,,,"44W wired, 50% in 36 min | Reverse wired",no_wireless_mention
+vivo,vivo Y21d,,,,"44W wired, 50% in 40 min | Reverse wired",no_wireless_mention
+vivo,vivo Y300 GT,,,,"90W wired, 100% in 55 min | Reverse wired",no_wireless_mention
+vivo,vivo Y31,,,,"44W wired, 50% in 38 min | Reverse wired",no_wireless_mention
+vivo,vivo Y31 Pro,,,,"44W wired, 50% in 40 min | Reverse wired",no_wireless_mention
+vivo,vivo Y31d,,,,"44W wired, 50% in 43 min | Reverse wired | Bypass Charging",no_wireless_mention
+vivo,vivo Y31t,,,,44W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y32,,,,44W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y400 4G,,,,44W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y400,,,,"90W wired, 50% in 20 min | Reverse wired | Bypass Charging",no_wireless_mention
+vivo,vivo Y400 Pro,,,,"90W wired, 50% in 19 min | 6W reverse wired",no_wireless_mention
+vivo,vivo Y500,,,,44W wired | Reverse wired | Bypass charging,no_wireless_mention
+vivo,vivo Y500i,,,,44W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y500s,,,,44W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y600 Pro,,,,90W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y600 Turbo,,,,"90W wired, 44W UFCS, 55W PD/PPS | Reverse wired",no_wireless_mention
+vivo,vivo Y600i,,,,44W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y60,,,,15W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y6,,,,44W wired | Reverse wired,no_wireless_mention
+vivo,vivo Y6t,,,,15W wired | Reverse wired,no_wireless_mention
+Xiaomi,Xiaomi 15T,,,,"67W wired, PD3.0, 100% in 50 min",no_wireless_mention
+Xiaomi,Xiaomi 17T,,,,"67W wired, 50W PPS, PD3.0 | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Poco C81,,,,15W wired | 7.5W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Poco C81 Pro,,,,15W wired | 7.5W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Poco C81x,,,,15W wired | 7.5W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Poco C85 4G,,,,"33W wired, PD, 50% in 31 min | 10W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Poco C85,,,,"33W wired, PD, 50% in 28 min | 10W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Poco C95 Pro,,,,"45W wired, PD, 100% in 96 min | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Poco F7,,,,"90W wired, PD3.0, QC3+, 80% in 30 min | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Poco F8 Pro,,,,"100W wired, PD3.0, QC3+, 100W PPS, 100% in 37 min, | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Poco M7 4G,,,,33W wired | 18W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Poco M7 Plus,,,,33W wired | 18W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Poco M8,,,,45W wired | 18W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Poco M8 Power,,,,"45W wired, PD3.0 | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Poco M8 Pro,,,,"100W wired, 100% in 40 min | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Poco M8s,,,,33W wired | 18W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Poco M8x,,,,"45W wired, PD | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Poco X8,,,,"67W wired, PD3.0 | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Poco X8 Power,,,,"100W wired, PD3.0, PPS | 27W reverse wired | Bypass charging",no_wireless_mention
+Xiaomi,Xiaomi Poco X8 Pro Max,,,,"100W wired, 100W PPS, PD3.0, PPS, 50% in 24 min | 27W reverse wired | Bypass charging",no_wireless_mention
+Xiaomi,Xiaomi Redmi 15 4G,,,,33W wired,no_wireless_mention
+Xiaomi,Xiaomi Redmi 15,,,,"33W wired, PD 2.0, PPS, QC3 | 18W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi 15a,,,,15W wired | 7.5W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Redmi 15C 4G,,,,"33W wired, PD",no_wireless_mention
+Xiaomi,Xiaomi Redmi 15C,,,,"33W wired, PD, 50% in 28 min | 10W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi 17 4G,,,,"45W wired, 100% in 96 min | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi 17,,,,"45W wired, 51% in 40 min, 100% in 96 min | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi 17C,,,,"33W wired, PD, 50% in 28 min | 10W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi 17C 4G,,,,"18W wired, PD",no_wireless_mention
+Xiaomi,Xiaomi Redmi A7,,,,15W wired | 7.5W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Redmi A7 Pro 4G,,,,15W wired,no_wireless_mention
+Xiaomi,Xiaomi Redmi A7 Pro,,,,15W wired | 7.5W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Redmi K80 Ultra,,,,"100W wired, PD3.0 | Bypass charging",no_wireless_mention
+Xiaomi,Xiaomi Redmi K90,,,,"100W wired, PD3.0, QC3+, 100W PPS | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi K90 Max,,,,"100W wired, 100W PPS, PD3.0 | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi K90 Ultra,,,,"100W wired, 100W PPS, PD3.0 | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi M100,,,,"45W wired, PPS | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 15 4G,,,,33W wired | 18W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 15,,,,45W wired | 18W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 15 Pro,,,,45W wired | 22.5W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 15 Pro+,,,,"100W wired, 100% in 40 min | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 15 Pro 4G,,,,45W wired | 18W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 15 Special,,,,45W wired | 18W reverse wired,no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 17 4G,,,,"45W wired, PD3.0 | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 17,,,,"45W wired, PD3.0 | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 17 (India/China),,,,"45W wired, PD3.0 | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 17 Pro,,,,"67W wired, PD3.0, 50% in 34 min | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 17 Pro (China),,,,"67W wired, PD3.0 | 22.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi Note 17 Pro Max,,,,"100W wired, PD3.0, PPS | 27W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi R70,,,,"15W wired, PD | 7.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi R70m,,,,"15W wired, PD | 7.5W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi Turbo 5,,,,"100W wired, 100W PPS, PD3.0 | 27W reverse wired",no_wireless_mention
+Xiaomi,Xiaomi Redmi Turbo 5 Max,,,,"100W wired, 100W PPS, PD3.0 | 27W reverse wired",no_wireless_mention
